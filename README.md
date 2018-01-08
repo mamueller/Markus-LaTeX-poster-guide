@@ -8,6 +8,6 @@ maximum flexibility for the users to craft the user specific content.
 Especially with respect to the tools users might want to employ the template should interfere as little as possible.
 
 Since we already had a beamer \*.sty file we start with a 
-[beamer poster template](https://github.com/mamueller/Markus-LaTeX-poster-guide/ExamplePosters/1_beamer_blocks_in_Columns/poster.pdf)
+[beamer poster template](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/1_beamer_blocks_in_Columns/poster.pdf)
 but later also consider the possibility of 
 forking the 'baposter.cls'.
