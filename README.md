@@ -11,7 +11,7 @@ Since we already had a beamer \*.sty file we proceed in the following order.
 1. ) [beamer blocks in columns](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/1_beamer_blocks_in_Columns/poster.pdf)
 
 1. ) [beamer blocks with package textpos](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/2_beamer_blocks_with_textpos/poster.pdf)
-1. ) [3 tacolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_taolorboxes_beamertemplate/poster.pdf)
+1. ) [3 tacolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_tacolorboxes_in_beamertemplate/poster.pdf)
 1. ) [forking baposter.cls](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/4_baposter_fork/poster.pdf)
 
  
