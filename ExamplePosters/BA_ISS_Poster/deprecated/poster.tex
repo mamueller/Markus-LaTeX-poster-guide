@@ -1,0 +1,280 @@
+\documentclass[final,hyperref={pdfpagelabels=false}, professionalmath, mathserif, 11pt]{beamer}
+\usepackage{grffile}
+\mode<presentation>{\usetheme{BGC_retreat}}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[round]{natbib}
+
+ 
+\def\mytitle{SoilR and a General SOM Decompositon Model }
+%\def\mysubtitle{Application to Stability}
+\def\myauthor{Markus Müller \quad Carlos Sierra }
+\def\myfooterleft{
+    \begin{minipage}[T]{.95\textwidth}
+
+\begin{thebibliography}{15}
+%\providecommand{\natexlab}[1]{#1}
+%\providecommand{\url}[1]{\texttt{#1}}
+%\expandafter\ifx\csname urlstyle\endcsname\relax
+%  \providecommand{\doi}[1]{doi: #1}\else
+%  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+
+\bibitem[Sierra et~al.(2012)Sierra, M\"uller, and Trumbore]{SierraGMD}
+C.~A. Sierra, M.~M\"uller, and S.~E. Trumbore.
+\newblock Models of soil organic matter decomposition: the {SoilR} package,
+  version 1.0.
+\newblock \emph{Geosci. Model Dev.}, 5\penalty0 (4):\penalty0 1045--1060, 2012.
+\newblock GMD.
+
+\bibitem[Sierra et~al.(2014)Sierra, M\"uller, and Trumbore]{SierraGMD14}
+C.~A. Sierra, M.~M\"uller, and S.~E. Trumbore.
+\newblock Modeling radiocarbon dynamics in soils: {SoilR} , version 1.1.
+\newblock \emph{Geosci. Model Dev.}, 7\penalty0 (7):\penalty0 1919--1931, 2014.
+\newblock GMD.
+
+\end{thebibliography}
+     \end{minipage}
+}
+\def\myfooterright{
+    \begin{minipage}[T]{.95\textwidth}
+	\begin{minipage}[c]{5cm}
+	\includegraphics[height=4cm]{MarkusMueller.jpg}
+	\end{minipage}
+	\begin{minipage}[c]{10cm}
+	Markus Müller
+	\end{minipage}
+	\begin{minipage}[c]{5cm}
+	\includegraphics[height=4cm]{Sierra.jpg}
+	\end{minipage}
+	\begin{minipage}[c]{10cm}
+	Carlos Sierra
+	\end{minipage}
+	\begin{minipage}[c]{5cm}
+	\includegraphics[height=4cm]{qrcode.png}
+	\end{minipage}
+     \end{minipage}
+\vspace{1cm}
+}
+
+\usepackage{setspace}
+\setstretch{1.25}
+
+\usepackage{bm}
+\usepackage{tikz}
+\input{tikzlibs}
+\input{colors}
+%%%%<
+%\usepackage{verbatim}
+%\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tikzpicture}
+%\setlength\PreviewBorder{5pt}%
+%%%%>
+
+%node[pos=0.5]{yes}
+\input{macros}
+\input{keys}
+\input{umlstyles}
+%\setbeamersize{text margin left=5pt,text margin right=5pt}
+%\newtheorem{theorem}{Theorem} 
+\newtheorem{Def}{Definition:}
+%\newtheorem{lemma}{Lemma:}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\graphicspath{ {./images/} }
+\begin{frame}
+%	\begin{center}
+%\input{uas.tex}
+%	\end{center}
+\begin{columns}
+  % ------------
+  % FIRST COLUMN
+  % ------------
+  
+  \begin{column}{.48\textwidth}
+    \begin{minipage}[T]{.95\textwidth}
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \setbeamercolor*{block title}{bg=darkgray}
+      \begin{block}{Overview}
+	\begin{figure}
+	  \includegraphics[height=20cm]{soilrMindMap.pdf}
+	  \caption{The General Model concept as central synthesis tool and product of theory and software development}
+	\end{figure}
+      \end{block}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \setbeamercolor*{block title}{bg=GeneralModel}
+    \begin{block}{The General SOM Decomposition Model}
+    \begin{columns}[b]
+    \column{.5\textwidth}
+    		\[
+		\mathbf{\dot{C}}= \bm{I}(t) + {\bf T}(\mathbf{C},t) \cdot {\bf N}(t, \bm{C}) \cdot \bm{C}(t)
+    		\]
+    		\begin{equation*}	
+    		\label{structCond}
+    		\begin{array}{lcl}	
+    		N_{i,i}(\mathbf{C},t) 		&\ge& 	 0 \quad \forall i \\
+    		T_{i,i}(\mathbf{C},t) 		&=& 	 -1 \quad \forall i \\
+    		T_{i,j}(\mathbf{C},t) 		&\ge& 	 0 \quad \forall i \ne j \\
+    		\sum_i T_{i,j}(\mathbf{C},t) 	&=  &	 1\quad \forall j 
+    		\end{array}	
+    		\end{equation*}	
+    		This model structure generalizes most SOM decomposition models with any arbitrary number of pools, including those describing nonlinear interactions among state variables. It enforces mass balance and substrate dependence of decomposition, and it is fexible enough to describe:
+		\begin{enumerate}
+		\item Heterogeneity of decomposition rates
+		\item Transformations of organic matter
+		\item Environmental variability effects
+		\item Organic matter interactions
+		\end{enumerate}
+
+    \column{.5\textwidth}
+		Examples for nonlinear models are:
+		\begin{enumerate}
+			\item Exoenzyme models \citep{Schimel,Sinsabaugh}
+			\item AWB \citep{Allison}
+			\item Bacwave \citep{Zelenev}
+			\item MEND \citep{WangMEND}
+			\item Manzoni \citep{Manzoni07}
+		\end{enumerate}
+		Also linear models fit into the general framework 
+		\begin{enumerate}
+			\item Henin's model \citep{HeninDupuis, Henin}
+			\item ICBM \citep{AndrenKatterer}
+			\item RothC \citep{Jenkinson, Coleman} 
+			\item Century \citep{Parton} 
+			\item Fontaine 1-4 \citep{Fontaine}
+		\end{enumerate}
+    \end{columns}
+    \end{block}
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \setbeamercolor*{block title}{bg=SoilPy}
+      \begin{block}{
+	  \includegraphics[height=1.5cm]{logo_soilpy} 
+	  \hspace{1cm}
+	  python Software, not yet published 
+	  }
+	\begin{enumerate}
+		\item A dynamic  catalog to \emph{reproduce} the symbolic math representations of all the above 
+		mentioned models in terms of the general model structure.
+		\item Tools to check the validity of the models (properties of $\mathbf{T}$ and $\mathbf{N}$)
+		\item Tools to verify symbolically available fixed points 
+		\item Tools to analyze the stability of those fixed points
+		\item Tools to compute and verify fixed points numerically
+		\item Tools to visualize 2-pool and 3-pool models in the phase space 
+		\item Symbolic coordinate transformations to facilitate stability analysis
+	\end{enumerate}
+The following example \citep{Manzoni07} is copied from the (shortened) \LaTeX \hspace{1ex}  report of the software:\\ 
+$\frac{d}{d{t}}\left(\begin{matrix}C_{S}\\C_{B}\end{matrix}\right)=\left(\begin{matrix}ADD - \frac{C_{B} C_{S} k_{S}}{C_{S} + K_{m}} + C_{B} k_{B}\\\frac{C_{B} C_{S} k_{S}}{C_{S} + K_{m}} \left(- r + 1\right) - C_{B} k_{B}\end{matrix}\right) $
+translates to 
+$ \mathbf{\dot{C}}=\mathbf{I + T\cdot N(C)\, C} $\\
+with: $\mathbf{\dot{C}}=\frac{d}{d{t}}\left(\begin{matrix}C_{S}\\C_{B}\end{matrix}\right)$,
+$\mathbf{T}=\left(\begin{matrix}-1&  1\\- r + 1 & -1\end{matrix}\right)$,
+$\mathbf{N}=\left(\begin{matrix}\frac{C_{B} k_{S}}{C_{S} + K_{m}} & 0\\0 & k_{B}\end{matrix}\right) \text{}$,
+$\mathbf{I}=\left(\begin{matrix}ADD\\0\end{matrix}\right)$.\\ 
+Checking alphas:
+$ r_{0}=-\sum_{k=1}^{n}T_{k,0}=r $ ,$ r_{1}=-\sum_{k=1}^{n}T_{k,1}=0 $.\\
+Checking suggested symbolic fixed point(s):
+$ \mathbf{\tilde{C}}=\left(\begin{matrix}\frac{K_{m} k_{B}}{- k_{B} + k_{S} \left(- r + 1\right)}\\\frac{ADD}{k_{B} r} \left(- r + 1\right)\end{matrix}\right)$, substitute:
+$ \mathbf{\dot{C}}(\mathbf{\tilde{C}})=\left(\begin{matrix}0\\0\end{matrix}\right) $\\
+With numeric parameters:
+$ \mathbf{\dot{C}}=\left(\begin{matrix}- \frac{1.8 \cdot 10^{-5} C_{B} C_{S}}{C_{S} + 900} + 0.007 C_{B} + 3.3\\\frac{7.2 \cdot 10^{-6} C_{B} C_{S}}{C_{S} + 900} - 0.007 C_{B}\end{matrix}\right) $
+	\begin{figure}
+	  \includegraphics[height=11cm]{posfp.pdf}
+	  \includegraphics[height=11cm]{3D-OscillatingStayPositiveExample}
+	  \caption{On the left is the phase plane plot of a model with a fixed point. On the left is a phase space plot of a linear 3 pool feedback model showing the plane of damped  oscillations and the boundaries of the positive octant.
+	  }
+	\end{figure}
+      \end{block}
+    \end{minipage}
+  \end{column}
+  
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % -------------
+  % SECOND COLUMN
+  % -------------
+  
+  
+  \begin{column}{.48\textwidth}
+    \begin{minipage}[T]{.95\textwidth}
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \setbeamercolor*{block title}{bg=TheoreticalAnalysis}
+      \begin{block}{Theoretical Stability Analysis}
+      The unified description of many models in one formula offers: 
+      \begin{enumerate}
+	\item 
+	A strict and unambiguous definition and  treatment of different concepts, e.g. \emph{Stability}. 
+	\item
+	Access to existing and relevant mathematical literature by the right keywords. 
+	\item 
+	Means to classify models w.r.t. mathematical properties and thereby:
+	\item 
+	A way to decide which questions to ask about which models, thereby providing both of the following: 
+	\item 
+	Inspiration for generalization, a focal point to answer many questions about many models at once, or
+	\item 
+	Protection against futile quests by discovering unanswerable questions, e.g. \emph{steady} states for time\emph{variant} systems... 
+      \end{enumerate}
+	\begin{figure}
+	\input{lengths}
+	    \input{StabilityTheories}
+	  \caption{The graph shows one example about how the general model can guide decisions. Given an arbitrary instance of the general model, it  shows which  mathematically defined concept of \emph{stability} can possibly be established based on the mathematical properties of the model.}
+	\end{figure}
+      \end{block}
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \setbeamercolor*{block title}{bg=SoilR}
+      \begin{block}{
+	  \includegraphics[height=1.5cm]{logo_soilr} 
+	  \hspace{1cm}
+	  R Software,
+	  public package on cran
+	  }
+	 SoilR is our publicly available code representation of the general model. It consists of both an extensive library of models and many computational tools to analyze them.  Its internal representation as object oriented framework helped the present form of the general model to emerge. In particular its purposes are the following:
+	 \begin{enumerate}
+	 \item Prove theoretical concepts by implementing them, exposing theoretical errors and ambiguities by the rigor required to run the code.
+	 \item Disclose the underlying theoretical structure of the ecological system by the continuous restructuring required to integrate new non-contradictory features
+	 \item Provide an easy to use framework to reproduce our scientific results
+	 \item Provide a community tool that can be improved and modified by others, facilitating \emph{reproducible research}. 
+	 \end{enumerate}
+	 
+
+	\begin{figure}
+	  \includegraphics[height=9cm]{RothCfig} \hspace{1cm}
+	  \includegraphics[height=9cm]{ModelFit.pdf}
+	  \includegraphics[height=9cm]{NonlinearAtmosphericModelMeanAge}
+	  %\includegraphics[height=10cm]{NonlinearAtmosphericModelMeanAge}
+	  %\includegraphics[height=10cm]{MeanAgeSteady}
+	  %\includegraphics[width=.3\textwidth]{CDI}
+	  %\includegraphics[width=.5\textwidth]{PoolStructureEx.pdf}
+	  \caption{
+	  %\begin{minipage}{\textwidth}
+	  Example applications of SoilR, 
+	  left: carbon stocks, total and per pool, predicted by the Roth C model as functions of time; 
+	   middle: example of a Bayesian parameter estimation combining SoilR with package FME.   
+	   right: Mean age of carbon in a pool of an nonlinear model as function of time.
+	  %\end{minipage}
+	  }
+	\end{figure}
+	\begin{figure}
+	  \includegraphics[height=7cm]{Reservoir_Peoples_Ages2}
+	  \includegraphics[height=7cm]{MeanTransitTime}
+	  %\includegraphics[width=.45\textwidth]{Reservoir_Peoples_Ages2}
+	  %\includegraphics[width=.45\textwidth]{MeanTransitTime}
+	  %\includegraphics[width=.45\textwidth]{NonlinearAtmosphericModelMeanAge}
+	  %\includegraphics[width=.45\textwidth]{MeanAgeSteady}
+	  \caption{Two intuitive definitions of mean age and transit time, implemented in SoilR for non-steady-state models. }
+	\end{figure}
+	We are currently developing a new method for calculating transit times and mean ages for models that are not in equilibrium and can also be nonlinear. 
+	This is done with a Monte Carlo particle simulator that facilitates modeling of cycling times through a network of compartments. All particles in the system
+	contain information about the time they enter the system, how long they have remained, and how old they are at the time they leave the system. 
+
+      \end{block}
+
+    \end{minipage}
+  \end{column}
+\end{columns}
+	\vspace{3ex}
+\end{frame}
+\bibliography{GeneralModel}
+\bibliographystyle{abbrvnat}
+\end{document}

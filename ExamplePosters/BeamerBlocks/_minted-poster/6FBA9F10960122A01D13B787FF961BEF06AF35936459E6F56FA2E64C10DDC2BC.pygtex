@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} vim:set ff=unix expandtab ts=2 sw=2:}
+\PYG{k}{\PYGZbs{}newenvironment}\PYG{n+nb}{\PYGZob{}}myMiniPage\PYG{n+nb}{\PYGZcb{}}[1][]\PYG{n+nb}{\PYGZob{}}\PYG{c}{\PYGZpc{} define the height as an optoinal argument}
+	  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}[c][\PYGZsh{}1][t]\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}textwidth}\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{}	}
+\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZob{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{} }
+\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newenvironment}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}[2][]\PYG{n+nb}{\PYGZob{}} \PYG{c}{\PYGZpc{} define the height as an optoinal argument}
+  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}block\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+      \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}[c][3cm]\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}textwidth}\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{} }
+      \PYGZsh{}2 \PYG{c}{\PYGZpc{} wrap the header in a minipage of fixed hight}
+      \PYG{c}{\PYGZpc{} This is a minimal solution.}
+      \PYG{c}{\PYGZpc{} We will see later that this can be done in a smarter way.}
+      \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{} }
+    \PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}myMiniPage\PYG{n+nb}{\PYGZcb{}}[\PYGZsh{}1]
+\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZob{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}myMiniPage\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{}}
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}block\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

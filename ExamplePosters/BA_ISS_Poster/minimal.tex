@@ -1,0 +1,192 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+%\documentclass[portrait,final,a0paper,fontscale=0.285]{baposterSAB2018}
+\documentclass[portrait,final,a0paper,fontscale=0.345,debug]{baposterSAB2018}
+
+
+
+\input{packages}
+\input{macros}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Here starts the poster
+%%%---------------------------------------------------------------------------
+%%% Format it to your taste with the options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define some colors
+
+\definecolor{lightblue}{rgb}{.187,.613,.594}
+%\definecolor{lightblue}{rgb}{0.145,0.6666,1}
+
+
+\hyphenation{resolution occlusions}
+%%
+\newcommand{\numberofcolumns}{2}
+\begin{poster}%
+  % Poster Options
+  {
+  % Show grid to help with alignment
+  grid=true,
+  % Column spacing
+  colspacing=1em,
+  columns=\numberofcolumns, 
+  % Color style
+  bgColorOne=lightblue,
+  %bgColorOne=white,
+  bgColorTwo=white,
+  borderColor=lightblue,
+  headerColorOne=black,
+  headerColorTwo=lightblue,
+  headerFontColor=white,
+  boxColorOne=white,
+  boxColorTwo=lightblue,
+  % Format of textbox
+  textborder=roundedleft,
+  % Format of text header
+  eyecatcher=true,
+  headerborder=closed,
+  headerheight=4cm,
+  footerheight=1cm,
+  %headerheight=0.15\textheight,
+%  textfont=\sc, An example of changing the text font
+  headershape=roundedright,
+  headershade=shadelr,
+  headerfont=\Large, %\textsc, %Sans Serif
+  textfont={\setlength{\parindent}{1.5em}},
+  boxshade=plain,
+  %background=shade-tb,
+  background=plain,
+  linewidth=2pt
+  }
+  % Eye Catcher
+  {\includegraphics[height=4.5em]{images/logos/EmmyNoether}
+  } 
+  % Title
+  {Application of Input to State Stability to ecological reservoir models}
+  % Authors
+  {
+ {\bf  Markus M\"uller, Carlos A. Sierra}   \\
+  {\small  <csierra@bgc-jena.mpg.de> } %\\ 
+%  Independent Research Group \\
+%  Theoretical Ecosystem Ecology
+  }
+  % University logo
+  {% The makebox allows the title to flow into the logo, this is a hack because of the L shaped logo.
+%   \includegraphics[height=5em]{Minerva} \\
+   \includegraphics[height=2em]{BGClogo}
+  }
+  %added by mm
+  % footer 
+  {
+    % here comes the footer stuff
+   \includegraphics[height=2em]{BGClogo}
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Now define the boxes that make up the poster
+  %%%---------------------------------------------------------------------------
+  %%% Each box has a name and can be placed absolutely or relatively.
+  %%% The only inconvenience is that you can only specify a relative position 
+  %%% towards an already declared box. So if you have a box attached to the 
+  %%% bottom, one to the top and a third one which should be in between, you 
+  %%% have to specify the top and bottom boxes before you specify the middle 
+  %%% box.
+  % since in this example we have several boxes with the same horizontal alignment and widht
+  % we set some new variables
+  \newcommand{\leftspan}{2}
+  \newcommand{\leftcol}{0}
+
+  \newcommand{\rightspan}{\numexpr (\numberofcolumns - \leftspan) \relax}
+  \newcommand{\rightcol}{\leftspan}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % first column  
+   % % top
+	 % \headerbox{
+   %   TopLeft
+   % }{
+   %   name=TopLeft,
+   %   span=\leftspan,
+   %   column=\leftcol, 
+   %   %row=0
+   % }{
+   % 	\Large Content
+   % 	\the\rightspan
+   %  }
+	 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % bottom 
+	  \headerbox{
+      BottomLeft 
+    }{
+      name=BottomLeft,
+      span=\leftspan,
+      column=\leftcol, 
+      %row=2, 
+      above=bottom
+      %below=general
+    }{
+    	\Large Content
+	  }
+	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   % % middle
+	 % \headerbox{
+   %   Example: general soil model
+   % }{
+   %   name=general,
+   %   span=\leftspan,
+   %   column=\leftcol,
+   %   %row=2, 
+   %   below=TopLeft,
+   %   above=BottomLeft
+   % }{
+   % 	\Large Content
+	 % }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% second column  
+  %  % top
+  %    \headerbox{
+  %      Results II, ISS like behavior and proof for example system
+  %    }{
+  %      name=combi, 
+  %      column=\rightcol, 
+  %      span=\rightspan,
+  %      row=0
+  %    }{
+  %  	\Large Content
+  %    }
+  %  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %  % middle
+  %  \headerbox{
+  %    Conclusion
+  %  }{
+  %    name=Intro,
+  %    span=\rightspan,
+  %    column=\rightcol, 
+  %    below=combi,
+  %    %above=bibliography
+  %    above=bottom
+  %  }{
+  %  	\Large Content
+  %  }
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% footerbox 
+  %  \headerbox{
+  %    Conclusion
+  %  }{
+  %    name=Intro,
+  %    span=\rightspan,
+  %    column=\rightcol, 
+  %    below=combi,
+  %    %above=bibliography
+  %    above=bottom
+  %  }{
+  %  	\Large Content
+  %  }
+%%%%%%%%%%
+\end{poster}
+\end{document}

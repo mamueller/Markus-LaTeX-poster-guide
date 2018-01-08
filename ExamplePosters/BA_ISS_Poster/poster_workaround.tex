@@ -1,0 +1,255 @@
+ 
+% vim:set ff=unix expandtab ts=2 sw=2:
+%\documentclass[landscape,final,a0paper,fontscale=0.285]{baposter}
+\documentclass[portrait,final,a0paper,fontscale=0.285]{baposter}
+
+%\usepackage{grffile}
+\usepackage{calc}
+\usepackage{amsmath,amssymb,amsfonts,amscd,amsthm}
+\usepackage{relsize}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{longtable,booktabs}
+\usepackage{array}
+\usepackage{natbib}
+\usepackage{bm}
+\usepackage{bibentry}
+%\usepackage[natbib=true]{biblatex}
+%\usepackage{times}
+%\usepackage{helvet}
+%\usepackage{bookman}
+%\usepackage{palatino}
+
+\newcommand{\captionfont}{\footnotesize}
+\newcommand{\SoilR}{\textsc{SoilR}}
+\newcommand{\RC}{$\Delta^{14}$C}
+\newcommand{\figsize}{0.108}
+
+%\usetikzlibrary{calc}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Some math symbols used in the text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Multicol Settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\columnsep}{1.5em}
+\setlength{\columnseprule}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Save space in lists. Use this after the opening of the list
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\compresslist}{%
+\setlength{\itemsep}{1pt}%
+\setlength{\parskip}{0pt}%
+\setlength{\parsep}{0pt}%
+}
+
+\input{macros}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Here starts the poster
+%%%---------------------------------------------------------------------------
+%%% Format it to your taste with the options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define some colors
+
+\definecolor{lightblue}{rgb}{.187,.613,.594}
+%\definecolor{lightblue}{rgb}{0.145,0.6666,1}
+
+
+\hyphenation{resolution occlusions}
+%%
+\newcommand{\numberofcolumns}{5}
+\begin{poster}%
+  % Poster Options
+  {
+  % Show grid to help with alignment
+  grid=true,
+  % Column spacing
+  colspacing=1em,
+  columns=5,
+  % Color style
+  bgColorOne=white,
+  bgColorTwo=white,
+  borderColor=lightblue,
+  headerColorOne=black,
+  headerColorTwo=lightblue,
+  headerFontColor=white,
+  boxColorOne=white,
+  boxColorTwo=lightblue,
+  % Format of textbox
+  textborder=roundedleft,
+  % Format of text header
+  eyecatcher=true,
+  headerborder=closed,
+  headerheight=0.15\textheight,
+%  textfont=\sc, An example of changing the text font
+  headershape=roundedright,
+  headershade=shadelr,
+  headerfont=\Large, %\textsc, %Sans Serif
+  textfont={\setlength{\parindent}{1.5em}},
+  boxshade=plain,
+%  background=shade-tb,
+  background=plain,
+  linewidth=2pt
+  }
+  % Eye Catcher
+  {\includegraphics[height=4.5em]{../../../../../../Administration/Logos/EmmyNoether}
+  } 
+  % Title
+  {Application of Input to State Stability to ecological reservoir models}
+  % Authors
+  {
+ {\bf  Markus M\"uller, Carlos A. Sierra}   \\
+  {\small  <csierra@bgc-jena.mpg.de> } %\\ 
+%  Independent Research Group \\
+%  Theoretical Ecosystem Ecology
+  }
+  % University logo
+  {% The makebox allows the title to flow into the logo, this is a hack because of the L shaped logo.
+%   \includegraphics[height=5em]{Minerva} \\
+   \includegraphics[height=2em]{BGClogo}
+  }
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Now define the boxes that make up the poster
+  %%%---------------------------------------------------------------------------
+  %%% Each box has a name and can be placed absolutely or relatively.
+  %%% The only inconvenience is that you can only specify a relative position 
+  %%% towards an already declared box. So if you have a box attached to the 
+  %%% bottom, one to the top and a third one which should be in between, you 
+  %%% have to specify the top and bottom boxes before you specify the middle 
+  %%% box.
+  % since in this example we have several boxes with the same horizontal alignment and widht
+  % we set some new variables
+  \newcommand{\leftspan}{2}
+  \newcommand{\leftcol}{0}
+
+  \newcommand{\rightspan}{\numexpr (\numberofcolumns - \leftspan) \relax}
+  \newcommand{\rightcol}{\leftspan} % since colums start with 0 colum 2 is the third....
+ 
+
+  % To be able to position boxex relative to  ('above') the footer  we 
+  % have to define it first (as mentioned above more generally)
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % footerbox 
+    \headerbox{
+    }{
+      name=footerbox,
+      span=\numberofcolumns,
+      column=0,
+      textborder=none,
+      headerborder=none,
+      boxheaderheight=0pt,
+      %below=combi,
+      %above=bibliography
+      above=bottom
+    }{
+    	\input{content/Intro}
+    }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  % first column  
+    % top
+	  \headerbox{
+      Challenge
+    }{
+      name=Challenge,
+      span=\leftspan,
+      column=\leftcol, 
+      %row=0
+    }{
+	  	\input{content/Challenge}
+	  }
+	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % bottom 
+	  \headerbox{
+      Results I, ISS as generalization of available stability concepts
+    }{
+      name=generalsoilmodel,
+      span=\leftspan,
+      column=\leftcol, 
+      %row=2, 
+      %above=bottom
+      above=footerbox
+    }{
+	  	\input{content/generalsoilmodel}
+	  }
+	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % middle
+	  \headerbox{
+      Example: general soil model
+    }{
+      name=general,
+      span=\leftspan,
+      column=\leftcol,
+      %row=2, 
+      below=Challenge,
+      above=generalsoilmodel
+    }{
+	  	\input{content/Example}
+	  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % second column  
+    % top
+      \headerbox{
+        Results II, ISS like behavior and proof for example system
+      }{
+        name=combi, 
+        column=\rightcol, 
+        span=\rightspan,
+        row=0
+      }{
+    	  \input{content/combi }
+      }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	 % \headerbox{
+   %   Bibliography 
+   % }{
+   %   name=bibliography,
+   %   span=\rightspan,
+   %   column=\rightcol, 
+   %   %row=2, 
+   %   above=bottom
+   % }{
+   %   {
+   %     \tiny
+   %     \begin{multicols}{3}
+   %       %\nobibliography{GeneralModel} % the citations are there but no Referenc section
+   %       %\renewcommand{\section}[2]{}% to get rid of the References Header
+   %       %\input{poster.bbl}
+   %       \bibliographystyle{abbrvnat}
+   %     \end{multicols}
+   %   }
+	 % }
+   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % bottom of regular column
+    % middle
+    \headerbox{
+      Conclusion
+    }{
+      name=Intro,
+      span=\rightspan,
+      column=\rightcol, 
+      below=combi,
+      %above=bottom
+      above=footerbox
+    }{
+    	\input{content/Intro}
+    }
+
+%%%%%%%%%%
+\end{poster}
+\bibliography{GeneralModel} % for an extra page
+\end{document}

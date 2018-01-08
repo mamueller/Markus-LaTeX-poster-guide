@@ -1,0 +1,50 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+%\begin{columns}[t,totalwidth=\wcols] % use for debugging
+\begin{columns}[t]
+  \begin{column}[t]{\wcolA}
+    %% now draw the actual boxes
+    % columnA
+    %\begin{myBox}[\hboxOneA]{Beamer blocks}
+    \begin{myBox}[\hboxOneA]{Beamer blocks}
+      \input{content/1a}
+    \end{myBox}
+    \vspace{\vblocksep}  
+    \begin{myBox}[\hboxTwoA]{Vertical alignment hack}
+      \input{content/2a}
+    \end{myBox}
+  
+  \end{column}
+  
+  %% column specific
+  %% colB
+  % compute the width of the second column 
+  \newlength{\wcolB}
+  \setlength{\wcolB}{\dimexpr \wcols-\wcolA \relax} 
+  
+    \begin{column}[t]{\wcolB}
+    \newlength{\hboxOneB}
+    % This time we even go a step further and measure
+    % the contents of the first box before we draw it
+     \newsavebox\myMeasuringBox
+      \savebox{\myMeasuringBox}{
+      \begin{myMiniPage}%
+        \input{content/1b}
+      \end{myMiniPage}%
+    }
+      \setlength{\hboxOneB}{\ht\myMeasuringBox}% height (above baseline) 
+      \addtolength{\hboxOneB}{\dp\myMeasuringBox}% and depth (below baseline) of the box 
+
+    % compute the height of the second box 
+    \newlength{\hboxTwoB}
+    \setlength{\hboxTwoB}{ \dimexpr ( \hcols - \hboxOneB) \relax}
+    
+    \begin{myBox}[\hboxOneB]{Measured block}
+      \usebox{\myMeasuringBox}
+    \end{myBox}
+    \vspace{\vblocksep}  
+    \begin{myBox}[\hboxTwoB]{Conclusions}
+      \input{content/2b}
+    \end{myBox}
+  \end{column}
+\end{columns}

@@ -1,0 +1,20 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+Beamer boxes can be used inside the columns environment, also provided by the beamer class.
+This simplifies some common vertical and horizontal alignment tasks.
+\alert{However there is one notable exception that requires a hack:}\\
+
+It is not possible to directly align beamer blocks vertically 
+at the top \alert{AND} the bottom of the poster simultaneously for the following reason.
+The block environment has no \emph{height} parameter. 
+The blocks grow with their content and the header.
+We can influence there size only indirectly by wrapping their content in minipages.
+The following code defines a minimal environment that allows 
+to add extra white space to the blocks.
+\inputminted{latex}{content/myBox.tex}
+With control over the vertical extent established, we can choose the size of the first box in a column and then use
+\LaTeX2e s built in computing facilities (
+  \verb1 \dimexpr1 and \verb1 \numexpr1) to determine the size of the second box.
+\inputminted{LaTeX}{content/lengths.tex}
+
+

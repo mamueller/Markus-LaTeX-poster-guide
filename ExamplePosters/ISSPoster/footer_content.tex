@@ -1,0 +1,29 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+\newlength{\pictureHeight}
+\setlength{\pictureHeight}{3cm}
+
+\newcommand{\peoplebox}[2]{
+  \begin{minipage}[t]{1.1\pictureHeight}
+    \centering{
+    	\includegraphics[height=\pictureHeight]{#1}\\
+	#2
+    }
+    \vspace{2cm}
+  \end{minipage}
+}
+
+\newcommand{\logobox}[1]{\peoplebox{#1}{}}
+
+%\def\myFooter{
+\newcommand{\myFooter}{
+  \logobox{images/logos/Minerva_green_text_en.pdf}
+	\hfill
+  \logobox{images/logos/EmmyNoether}
+	\hfill
+  \peoplebox{images/people/Sierra.jpg}{Carlos Sierra}
+	\hfill
+  \peoplebox{images/people/MarkusMueller.jpg}{Markus Müller}
+	\hfill
+  \logobox{images/qrcode.png}
+}

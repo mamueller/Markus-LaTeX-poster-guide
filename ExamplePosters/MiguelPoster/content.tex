@@ -1,0 +1,60 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+\newlength{\mycolwidth}
+%\setlength{\mycolwidth}{.48\textwidth} % for 2 columns
+\setlength{\mycolwidth}{.31\textwidth} % for 3 columns
+% measure the height of the blocks
+
+\begin{columns}
+	% -------------
+	% SECOND COLUMN
+	% -------------
+	\begin{column}{\mycolwidth}
+		\begin{center}
+			%\begin{minipage}[T]{.95\textwidth}
+				\parbox[t][\columnheight]{\textwidth}{
+						\input{content/block_1a}
+						\vspace{3ex}
+						\input{content/block_2a}
+						\vspace{3ex}
+					\input{content/block_3a}
+				}
+			%\end{minipage}
+		\end{center}
+	\end{column}    
+	% -------------
+	% SECOND COLUMN
+	% -------------
+	\begin{column}{\mycolwidth}
+		\begin{center}
+			%\begin{minipage}[T]{.95\textwidth}
+				\parbox[t][\columnheight]{\textwidth}{
+					\input{content/block_1b}
+					\vspace{3ex}
+					\input{content/block_2b}
+					\vspace{3ex}
+					\input{content/block_3b}
+				}
+			%\end{minipage}
+		\end{center}
+	\end{column}    
+	% -------------
+	% THIRD COLUMN
+	% -------------
+	\begin{column}{\mycolwidth}
+		\begin{center}
+			%\begin{minipage}[T]{.95\textwidth}
+				\parbox[t][\columnheight]{\textwidth}{
+					\input{content/block_1c}
+					\vspace{3ex}
+					\input{content/block_2c}
+					\vspace{3ex}
+					\input{content/block_3c}
+				}
+			%\end{minipage}
+		\end{center}
+	\end{column}    
+
+
+
+\end{columns}

@@ -1,0 +1,16 @@
+\documentclass{beamer}
+\newlength\A
+\newlength\B
+\newlength\C
+\setlength\A{100pt}
+\setlength\B{5pt}
+%\newcommand{\n}{\numexpr 3 \relax}
+\newcommand{\n}{3}
+\newcommand{\m}{\numexpr \n -1  \relax}
+
+\setlength\C{\dimexpr (\A - \B * \n) / (\n-1)  }
+\begin{document}
+\the\m
+\\
+\the\C
+\end{document}

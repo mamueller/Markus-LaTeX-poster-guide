@@ -1,0 +1,51 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} vim:set ff=unix expandtab ts=2 sw=2:}
+\PYG{c}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}columns\PYGZcb{}[t,totalwidth=\PYGZbs{}wcols] \PYGZpc{} use for debugging}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}columns\PYG{n+nb}{\PYGZcb{}}[t]
+  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}column\PYG{n+nb}{\PYGZcb{}}[t]\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}wcolA}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{c}{\PYGZpc{}\PYGZpc{} now draw the actual boxes}
+    \PYG{c}{\PYGZpc{} columnA}
+    \PYG{c}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}myBox\PYGZcb{}[\PYGZbs{}hboxOneA]\PYGZob{}Beamer blocks\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}[\PYG{k}{\PYGZbs{}hboxOneA}]\PYG{n+nb}{\PYGZob{}}Beamer blocks\PYG{n+nb}{\PYGZcb{}}
+      \PYG{k}{\PYGZbs{}input}\PYG{n+nb}{\PYGZob{}}content/1a\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}vspace}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}vblocksep}\PYG{n+nb}{\PYGZcb{}}  
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}[\PYG{k}{\PYGZbs{}hboxTwoA}]\PYG{n+nb}{\PYGZob{}}Vertical alignment hack\PYG{n+nb}{\PYGZcb{}}
+      \PYG{k}{\PYGZbs{}input}\PYG{n+nb}{\PYGZob{}}content/2a\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}
+  
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}column\PYG{n+nb}{\PYGZcb{}}
+  
+  \PYG{c}{\PYGZpc{}\PYGZpc{} column specific}
+  \PYG{c}{\PYGZpc{}\PYGZpc{} colB}
+  \PYG{c}{\PYGZpc{} compute the width of the second column }
+  \PYG{k}{\PYGZbs{}newlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}wcolB}\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}setlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}wcolB}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}dimexpr} \PYG{k}{\PYGZbs{}wcols}\PYGZhy{}\PYG{k}{\PYGZbs{}wcolA} \PYG{k}{\PYGZbs{}relax}\PYG{n+nb}{\PYGZcb{}} 
+  
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}column\PYG{n+nb}{\PYGZcb{}}[t]\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}wcolB}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}newlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}hboxOneB}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{c}{\PYGZpc{} This time we even go a step further and measure}
+    \PYG{c}{\PYGZpc{} the contents of the first box before we draw it}
+     \PYG{k}{\PYGZbs{}newsavebox\PYGZbs{}myMeasuringBox}
+      \PYG{k}{\PYGZbs{}savebox}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}myMeasuringBox}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+      \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}myMiniPage\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{}}
+        \PYG{k}{\PYGZbs{}input}\PYG{n+nb}{\PYGZob{}}content/1b\PYG{n+nb}{\PYGZcb{}}
+      \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}myMiniPage\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{}}
+    \PYG{n+nb}{\PYGZcb{}}
+      \PYG{k}{\PYGZbs{}setlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}hboxOneB}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}ht\PYGZbs{}myMeasuringBox}\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{} height (above baseline) }
+      \PYG{k}{\PYGZbs{}addtolength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}hboxOneB}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}dp\PYGZbs{}myMeasuringBox}\PYG{n+nb}{\PYGZcb{}}\PYG{c}{\PYGZpc{} and depth (below baseline) of the box }
+
+    \PYG{c}{\PYGZpc{} compute the height of the second box }
+    \PYG{k}{\PYGZbs{}newlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}hboxTwoB}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}setlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}hboxTwoB}\PYG{n+nb}{\PYGZcb{}\PYGZob{}} \PYG{k}{\PYGZbs{}dimexpr} ( \PYG{k}{\PYGZbs{}hcols} \PYGZhy{} \PYG{k}{\PYGZbs{}hboxOneB}) \PYG{k}{\PYGZbs{}relax}\PYG{n+nb}{\PYGZcb{}}
+    
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}[\PYG{k}{\PYGZbs{}hboxOneB}]\PYG{n+nb}{\PYGZob{}}measured block\PYG{n+nb}{\PYGZcb{}}
+      \PYG{k}{\PYGZbs{}usebox}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}myMeasuringBox}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}vspace}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}vblocksep}\PYG{n+nb}{\PYGZcb{}}  
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}[\PYG{k}{\PYGZbs{}hboxTwoB}]\PYG{n+nb}{\PYGZob{}}2b\PYG{n+nb}{\PYGZcb{}}
+      \PYG{k}{\PYGZbs{}input}\PYG{n+nb}{\PYGZob{}}content/2b\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}myBox\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}column\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}columns\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

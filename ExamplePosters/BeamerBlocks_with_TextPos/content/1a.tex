@@ -1,0 +1,66 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+
+ 
+\alert{\textit{Vertical alignment is simpler than with beamer Boxes but still challenging:}}
+\\
+Since the textblocks as Beamer boxes  adapt their vertical extent to their content.
+The vertical extent can only be controlled indirectly by putting minipages inside.
+This will also only work if the text does not fill the box completely.
+Fortunately the textblocks have no margins (in the default setting) so that the
+size of the inner box is identical to the outer size of the included minipage.
+
+
+%A 
+%\begin{verbatim}
+%\newsavebox\mybox
+%\setbox0=\vtop{%
+%		\begin{block}{A standard block} 
+%			some text  
+%		\end{block}%
+%}
+%\newlength{\bh}
+%\setlength{\bh}{\ht0}%
+%\addtolength{\bh}{\dp0}%
+%\end{verbatim}
+%and computing the necessarry vspace adjustment for the last box with code like the following:
+%{\small
+%  \begin{verbatim}
+%  \documentclass{beamer}
+%  \newlength\A
+%  \newlength\B
+%  \newlength\C
+%  \setlength\A{100pt}
+%  \setlength\B{5pt}
+%  \newcommand{\n}{3}
+%  \newcommand{\m}{\numexpr \n -1  \relax}
+%  
+%  \setlength\C{\dimexpr (\A - \B * \n) / (\n-1)  }
+%  \begin{document}
+%  \the\m
+%  \\
+%  \the\C
+%  \end{document}
+%  \end{verbatim}
+%}
+%The resultign code is extremely messy and furthermore does not belong in the content of the document.
+%\vspace{1cm}
+%
+%\alert{\textit{Conclusions}}
+%\begin{itemize}
+%   \item
+%     If you need boxes aligned with top and bottom do not use simple beamer blocks.
+%     \begin{verbatim}
+%        \usepackage[most,poster]{tcolorbox}
+%     \end{verbatim}
+%     or you use our other template
+%     \begin{verbatim}
+%        baposterSAB2018.cls
+%     \end{verbatim}
+%     Both ideas are derived from baposter.cls
+%     which implements vertical box alignment in the class away 
+%     from usercode and even allows boxes to be positioned relative BETWEEN other
+%     boxes. 
+%     You still have to be carefull not to overload the boxes but everything else is much less painfull.
+%\end{itemize}
+%\vspace{1cm}

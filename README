@@ -1,0 +1,8 @@
+The file beamerthemeSAB_2018.sty and the directory beamerthemeSAB_2018_files/ are not specific to the poster 
+and should not be changed. 
+
+The file poster.tex (and the files it sources with \input{}) contain the changeable content of the poster.
+To distinguish between the different parts of the poster these parts are described in different files, but
+You can actually put everything into poster.tex 
+You also can of course use a less elaborate directory structure for the images.
+The purpuse was to make it obvious which picture you need for what.

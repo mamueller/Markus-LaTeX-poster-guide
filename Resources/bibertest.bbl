@@ -1,0 +1,97 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{wikibook}{online}{}
+      \list{organization}{1}{%
+        {Wikibooks}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{Generating Bibliographies with biblatex and biber}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://en.wikibooks.org/wiki/LaTeX/Generating_Bibliographies_with_biblatex_and_biber
+      \endverb
+      \keyw{untrusted}
+    \endentry
+    \entry{wombat2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f5bcbecb9790d58dfdc4423c75e2d479}{%
+           family={Wombat},
+           family_i={W\bibinitperiod},
+           given={Walther},
+           given_i={W\bibinitperiod}}}%
+        {{hash=d687f068e69142b84cf87b25c525ade4}{%
+           family={Koala},
+           family_i={K\bibinitperiod},
+           given={Klaus},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d362afd1b731db04179fb835450b9c5}
+      \strng{fullhash}{6d362afd1b731db04179fb835450b9c5}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of modern skepticism}
+      \field{title}{The true meaning of 42}
+      \field{year}{2016}
+      \keyw{trusted}
+    \endentry
+    \entry{lion2010}{book}{}
+      \name{author}{3}{}{%
+        {{hash=c3431a7ab6597f72ae81543020c3832c}{%
+           family={Lion},
+           family_i={L\bibinitperiod},
+           given={Laura},
+           given_i={L\bibinitperiod}}}%
+        {{hash=f7aa93511770514b9eb45cd3bba0f2ac}{%
+           family={Giraffe},
+           family_i={G\bibinitperiod},
+           given={Gabrielle},
+           given_i={G\bibinitperiod}}}%
+        {{hash=a040d29e50fc827fa309e007e6d186bb}{%
+           family={Capybara},
+           family_i={C\bibinitperiod},
+           given={Carl},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {publishing house}%
+      }
+      \strng{namehash}{5eb56b29bb413ed27d62a63280499ada}
+      \strng{fullhash}{5eb56b29bb413ed27d62a63280499ada}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The dangers of asking the wrong question}
+      \field{year}{2010}
+      \keyw{trusted}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

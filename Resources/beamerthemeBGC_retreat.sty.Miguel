@@ -1,0 +1,191 @@
+\ProvidesPackage{beamerthemeBGC_retreat} 
+\mode<presentation>
+
+
+
+% ----------
+% Set colors
+% ----------
+
+\definecolor{darkgray}{RGB}{181, 181, 181}
+\definecolor{lightgray}{RGB}{248, 248, 248}
+
+
+\setbeamercolor{structure}{fg=black}
+\setbeamercolor{headline}{fg=white,bg=lightgray}
+\setbeamercolor{footcol}{fg=white, bg=darkgray}
+\setbeamerfont{footline}{size=\fontsize{50.0pt}{50.0pt}\selectfont,series=\sf}
+%\setbeamercolor{separation line}{bg=darkgray}
+
+
+\setbeamercolor{title in headline}{fg=black}
+\setbeamercolor{author in headline}{fg=black}
+\setbeamercolor{institute in headline}{fg=black, bg=lightgray}
+
+\setbeamercolor{framesubtitle}{fg=white, bg=darkgray!90!black}
+\setbeamercolor{author in head/foot}{fg=black, bg=white}
+\setbeamercolor{title in head/foot}{fg=white, bg=darkgray!90!blackk}
+
+\setbeamercolor*{normal text}{fg=black, bg=darkgray}
+
+
+% Set block colors and font sizes
+\setbeamercolor*{block body}{bg=white}
+\setbeamercolor*{block title}{bg=white, fg=darkgray}
+\setbeamerfont{block title}{size=\fontsize{50.0pt}{55.0pt}\selectfont}
+
+\setbeamercolor{upper separation line head}{fg=structure.fg}
+
+\setbeamercolor*{example body}{fg=lightgray,bg=black}
+\setbeamercolor*{example text}{fg=lightgray,bg=black}
+\setbeamercolor*{example title}{bg=white,fg=darkgray!90!black}
+
+
+
+
+
+
+
+
+% ------
+% Header
+% ------
+
+
+\setbeamertemplate{headline}{  
+  \leavevmode
+
+      \begin{beamercolorbox}[wd=1\paperwidth]{headline}
+    
+      \vspace*{3ex}    
+    
+      % Headline with logos
+      \begin{columns}
+    \usebeamercolor{normaltext}
+      \vspace*{4ex}
+      \begin{column}{.48\textwidth}
+        \hspace*{0.2cm}
+      \includegraphics[width=0.1\linewidth]{minerva_png}
+    \end{column}
+    \begin{column}{.48\textwidth}
+          \flushright
+        \includegraphics[width=0.4\linewidth]{institute_logo_png}
+          \hspace*{0.2cm}
+    \end{column}
+      \end{columns}
+    
+
+        \usebeamercolor{headline}
+        \vskip5ex
+        \centering
+        \usebeamercolor{title in headline}{\color{fg}{\fontsize{90.0pt}{90.0pt}\selectfont\mytitle} \\ [8ex]}
+        \usebeamercolor{author in headline}{\color{fg}{\fontsize{50.0pt}{100.0pt}\selectfont\myauthor} \\ [2ex]}
+    \end{beamercolorbox}
+
+    
+    \vskip2.5ex
+    
+
+
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
+    \rule{0pt}{18pt}
+  \end{beamercolorbox}
+}
+
+
+
+
+% ------
+% Footer
+% ------
+
+\setbeamertemplate{footline}{
+\normalbaselines
+\begin{beamercolorbox}[ht=10ex,leftskip=1em,rightskip=1em]{footcol}
+\begin{columns}
+\begin{column}{.48\textwidth}
+\end{column}
+
+
+\begin{column}{.48\textwidth}
+
+\end{column}
+\end{columns}
+
+\end{beamercolorbox}
+  
+\vskip0pt%
+}
+
+
+
+
+
+
+\mode<all>
+
+
+%\usecolortheme[]{dolphin}
+
+\usepackage{caption}
+\usepackage{subfigure}
+
+
+
+%% -------------
+%% Text and math
+%% -------------
+
+\usefonttheme{professionalfonts}
+
+\DeclareSymbolFont{cmsymb}{OMX}{cmex}{m}{n}
+\DeclareMathSymbol{\sumop}{\mathop}{cmsymb}{"50}
+\usepackage{amsmath,amssymb}
+
+\usepackage[scaled=1.1,sups]{XCharter}
+\usepackage[varg,cmintegrals,libertine,scaled=1.2]{newtxmath}
+\usepackage[scale=1]{tgheros}
+
+\frenchspacing
+\renewcommand\familydefault{\sfdefault}
+
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\setbeamertemplate{caption}[numbered]
+
+%\usepackage{enumitem}
+% \setitemize{label=\usebeamerfont*{itemize item}%
+% \usebeamercolor[fg]{itemize item}
+% \usebeamertemplate{itemize item}}
+
+\defbeamertemplate{itemize item}{bullet}{$\bullet$}
+\setbeamertemplate{itemize item}[bullet]
+\defbeamertemplate{itemize subitem}{dash}{--}
+\setbeamertemplate{itemize subitem}[dash]
+\setbeamertemplate{enumerate item}[circle]
+
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+
+
+\usepackage[orientation=portrait, size=a0, scale=1.0]{beamerposter}
+
+\usepackage{array,booktabs,tabularx}
+\newcolumntype{Z}{>{\centering\arraybackslash}X} % centered tabularx columns
+\newcommand{\pphantom}{\textcolor{ta3aluminium}} % phantom introduces a vertical space in p formatted table columns??!!
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}  
+\tikzset{every picture/.style={line width=3pt}}
+
+
+\newlength{\columnheight}
+\setlength{\columnheight}{105cm}
+
+
+\listfiles
+

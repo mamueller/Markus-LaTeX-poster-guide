@@ -1,0 +1,45 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+\documentclass[final,hyperref={pdfpagelabels=false}, professionalmath, mathserif, 11pt]{beamer}
+\mode<presentation>{\usetheme{SAB_2018}}
+
+% There are many packages already loaded by beamerthemeBGC_retreat.sty
+% put them in a file and load them here
+  %\input{packagesMiguel}
+  \input{packages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% obligatory macros expected by the style file
+% You have to provide defintions here, since the template expects them
+
+  % \myTitle
+  \newcommand\myTitle{An Empty Poster} 
+  
+  % \myDepartment 
+  \newcommand\myDepartment{Put Your Department here \vspace{1cm}}
+  
+  % \myFooter 
+  % The macro has to be defined in input file
+  \input{footer_content}	
+  % p.s.: We could define the macro here by the content of an input file
+  % \newcommand{\myFooter}{
+  %   \input{footerContent}
+  % }
+  % but then footerContent.tex could not contain any macro definitions,
+  % since you would define a macro inside a macro...
+  % and you would be forced to put your macros in a separate file to be sourced
+  % earlier.
+  % For the exmaples we wanted to keep the macros only needed in the 
+  % footer to stay there.
+
+
+\begin{document}
+  \begin{frame}
+  \vspace{3ex}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % main content
+    \input{content}	
+  
+  \end{frame}
+\end{document}

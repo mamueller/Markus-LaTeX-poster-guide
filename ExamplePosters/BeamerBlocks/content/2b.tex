@@ -1,0 +1,35 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+\begin{itemize}
+    \item
+      The built in environments of the beamer
+      class (\verb1 columns1 and \verb1 block1)
+      \alert{do not facilitate} a sensible automation 
+      of vertical alignment of the boxes.
+      If the columns are for instance aligned at the top the lowest boxes of different columns  will end at different vertical positions.
+    \item   
+      Basic functionality can be achieved by the presented approach of inflating the blocks with internal minipages.
+    \item 
+      The above code could be generelized in different ways: 
+    \begin{itemize}
+      \item 
+        More columns and rows, different distribution of whitespace. 
+      \item 
+        Instead of enforcing a fixed vertical size of the header, the actual size could be measured and substracted from the
+        parameter governing the size of the internal miniapage.
+        The parameter could then be interpreted as an outer vertical size, which is more intuitive. 
+    \end{itemize}
+    \item
+      Arbitrary positioning of boxes is not feasable.
+    \item 
+      Code achieving this level of generalty would better live in a package. 
+    \item 
+      Given the limitations and the complexity of the required workarounds we do not recommend the combination
+      of \verb1 columns1 and \verb1 block1 environments as general approach to posters.
+      The value of this example rather consists in the demonstration of the most basic approach to the alignment challenge,
+      and its minimal dependencies on other packages.
+    \item
+      The approach should certainly not be mandatory for the use of a template.
+      Such a template should allow the use of other approaches implemented by additional packages.
+      We will present such packages in the following poster examples.
+\end{itemize}

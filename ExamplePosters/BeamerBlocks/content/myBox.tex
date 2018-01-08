@@ -1,0 +1,21 @@
+% vim:set ff=unix expandtab ts=2 sw=2:
+\newenvironment{myMiniPage}[1][]{% define the height as an optoinal argument
+	  \begin{minipage}[c][#1][t]{\textwidth}%	
+}
+{
+    \end{minipage}% 
+}
+\newenvironment{myBox}[2][]{ % define the height as an optoinal argument
+  \begin{block}{
+      \begin{minipage}[c][3cm]{\textwidth}% 
+      #2 % wrap the header in a minipage of fixed hight
+      % This is a minimal solution.
+      % We will see later that this can be done in a smarter way.
+      \end{minipage}% 
+    }
+    \begin{myMiniPage}[#1]
+}
+{
+    \end{myMiniPage}%
+  \end{block}
+}

@@ -1,0 +1,26 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+%% now we set some lengths to organize our boxes in columns 
+%% for both columns
+\newlength{\vblocksep}
+\setlength{\vblocksep}{1cm} 
+\newlength{\hblocksep}
+\setlength{\hblocksep}{1cm} 
+
+%overall height of columns (fixme: this should ideally be set in the template)
+\newlength{\hcols}
+\setlength{\hcols}{76cm} 
+ %overall width of our columns
+\newlength{\wcols}
+\setlength{\wcols}{\dimexpr \textwidth-\hblocksep * 3  \relax}
+%% column specific
+%% colA
+\newlength{\wcolA}
+% set the widht of the first column manually
+\setlength{\wcolA}{.5\wcols} 
+\newlength{\hboxOneA} 
+% set the height of the first box manually
+\setlength{\hboxOneA}{13cm}
+\newlength{\hboxTwoA}
+% compute the height of the second box 
+\setlength{\hboxTwoA}{ \dimexpr ( \hcols - \hboxOneA) \relax}

@@ -1,0 +1,42 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+\centering
+\begin{multicols}{2}
+    		\[
+		\mathbf{\dot{C}}= \bm{I}(t) + {\bf T}(\mathbf{C},t) \cdot {\bf N}(t, \bm{C}) \cdot \bm{C}(t)
+    		\]
+    		\begin{equation*}	
+    		\label{structCond}
+    		\begin{array}{lcl}	
+    		N_{i,i}(\mathbf{C},t) 		&\ge& 	 0 \quad \forall i \\
+    		T_{i,i}(\mathbf{C},t) 		&=& 	 -1 \quad \forall i \\
+    		T_{i,j}(\mathbf{C},t) 		&\ge& 	 0 \quad \forall i \ne j \\
+    		\sum_i T_{i,j}(\mathbf{C},t) 	&=  &	 1\quad \forall j 
+    		\end{array}	
+    		\end{equation*}	
+    		This model structure generalizes most SOM decomposition models with any arbitrary number of pools, including those describing nonlinear interactions among state variables. It enforces mass balance and substrate dependence of decomposition, and it is flexible enough to describe:
+		\begin{enumerate}
+		\item Heterogeneity of decomposition rates
+		\item Transformations of organic matter
+		\item Environmental variability effects
+		\item Organic matter interactions
+		\end{enumerate}
+
+		Examples for nonlinear models are:
+		\begin{enumerate}
+			\item Exoenzyme models \citep{Schimel,Sinsabaugh}
+			\item AWB \citep{Allison}
+			\item Bacwave \citep{Zelenev}
+			\item MEND \citep{WangMEND}
+			\item Manzoni \citep{Manzoni07}
+		\end{enumerate}
+		Also linear models fit into the general framework 
+		\begin{enumerate}
+			\item Henin's model \citep{HeninDupuis, Henin}
+			\item ICBM \citep{AndrenKatterer}
+			\item RothC \citep{Jenkinson, Coleman} 
+			\item Century \citep{Parton} 
+			\item Fontaine 1-4 \citep{Fontaine}
+		\end{enumerate}
+\end{multicols}
+One general concept to encompass especially  these nonlinear  models is clearly desirable.
