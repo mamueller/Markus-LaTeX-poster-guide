@@ -1,0 +1,4 @@
+*.aux
+*.log
+*.nav
+*_minted-poster/*
