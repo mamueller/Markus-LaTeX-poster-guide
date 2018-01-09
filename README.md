@@ -11,7 +11,7 @@ It should also provide solutions for common problems.
 Therefore we offer some help to avoid the sometimes unnerving problems concerning the 
 **vertical alignment of boxes**.
 
-There is a prefered viewing order, inspired by increasing number of additional packages used. 
+There prefered viewing order. 
 Since we already had a beamer \*.sty file we start there.
 1. ) [beamer blocks in columns](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/1_beamer_blocks_in_Columns/poster.pdf)
 This requires a minimum of additional tools, but some user-code to control the alignment in a proper way.
