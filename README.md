@@ -18,7 +18,7 @@ If combined with beamerblocks it allows controlling the block properties via the
 
 1. ) [tacolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_tacolorboxes_in_beamertemplate/poster.pdf)
 This is the most advanced and comfortable solution offering a grid of boxes and even relative positioning of boxes.
-It also requires a very recent version of the package (probably requiring recent dependencies as well texlive2017 will work)
+It also requires a very recent version of the package, probably requiring recent dependencies as well (texlive2017 will work)
 The central command \posterbox is inspired by the baposter.cls but with the possibility
 to use it as a part of an existing layout (in contrast to baposter.cls which deals with the whole poster) 
 At the moment we do not attempt to control the properties of the boxes (shape, colors, fonts etc.) from the template
