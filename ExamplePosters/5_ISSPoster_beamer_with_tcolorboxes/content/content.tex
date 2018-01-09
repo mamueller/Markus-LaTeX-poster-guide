@@ -1,0 +1,144 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Here starts the poster
+%%%---------------------------------------------------------------------------
+%%% Format it to your taste with the options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define some colors
+
+\definecolor{lightblue}{rgb}{.187,.613,.594}
+%\definecolor{lightblue}{rgb}{0.145,0.6666,1}
+
+
+\hyphenation{resolution occlusions}
+%%
+\newcommand{\numberofcolumns}{5}
+
+\begin{tcbposter}[
+  poster = {
+    showframe,
+    height=.9\textheight,
+    spacing=2cm,
+    columns = \numberofcolumns
+  },
+  boxes = {
+    beamer,
+    colframe=blue!50!black,
+    colback=blue!50,
+    colupper=yellow!50
+  },
+]
+%  %%%---------------------------------------------------------------------------
+%  %%% Each box has a name and can be placed absolutely or relatively.
+%  %%% The only inconvenience is that you can only specify a relative position 
+%  %%% towards an already declared box. So if you have a box attached to the 
+%  %%% bottom, one to the top and a third one which should be in between, you 
+%  %%% have to specify the top and bottom boxes before you specify the middle 
+%  %%% box.
+%  % since in this example we have several boxes with the same horizontal alignment and widht
+%  % we set some new variables
+  \newcommand{\leftspan}{2}
+  \newcommand{\leftcol}{1}
+
+  \newcommand{\rightspan}{\numexpr (\numberofcolumns - \leftspan) \relax}
+  \newcommand{\rightcol}{\leftspan}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % first column  
+    % top
+  \posterbox[ title =Challenge]{
+      name=Challenge,
+      span=\leftspan,
+      column=\leftcol, 
+    }{
+	  	\input{content/Challenge}
+    %\the\rightspan
+	  }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % bottom 
+    \posterbox[title = {Results I, ISS as generalization of available stability concepts}]{
+      name=generalsoilmodel,
+      span=\leftspan,
+      column=\leftcol, 
+      above=bottom
+    }{
+	  	\input{content/generalsoilmodel}
+	  }
+	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % middle
+    \posterbox[title={ Example: general soil model }]{
+      name=general,
+      span=\leftspan,
+      column=\leftcol,
+      between=Challenge and generalsoilmodel
+    }{
+	  	\input{content/Example}
+	  }
+%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  % second column  
+%    % top
+%      \headerbox{
+%        Results II, ISS like behavior and proof for example system
+%      }{
+%        name=combi, 
+%        column=\rightcol, 
+%        span=\rightspan,
+%        row=0
+%      }{
+%    	  \input{content/combi }
+%      }
+%    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   % % bottom 
+%	 % \headerbox{
+%   %   Bibliography 
+%   % }{
+%   %   name=bibliography,
+%   %   span=\rightspan,
+%   %   column=\rightcol, 
+%   %   %row=2, 
+%   %   above=bottom
+%   % }{
+%   %   {
+%   %     \tiny
+%   %     \begin{multicols}{3}
+%   %       %\nobibliography{GeneralModel} % the citations are there but no Referenc section
+%   %       %\renewcommand{\section}[2]{}% to get rid of the References Header
+%   %       %\input{poster.bbl}
+%   %       \bibliographystyle{abbrvnat}
+%   %     \end{multicols}
+%   %   }
+%	 % }
+%   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    % middle
+%    \headerbox{
+%      Conclusion
+%    }{
+%      name=Intro,
+%      span=\rightspan,
+%      column=\rightcol, 
+%      below=combi,
+%      %above=bibliography
+%      above=bottom
+%    }{
+%    	\input{content/Intro}
+%    }
+%
+%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  % footerbox 
+%    \headerbox{
+%      Conclusion
+%    }{
+%      name=Intro,
+%      span=\rightspan,
+%      column=\rightcol, 
+%      below=combi,
+%      %above=bibliography
+%      above=bottom
+%    }{
+%    	\input{content/Intro}
+%    }
+%%%%%%%%%%%
+    \end{tcbposter}
+%\end{poster}
+%  \bibliography{GeneralModel} % for an extra page
+%  \bibliographystyle{abbrvnat}

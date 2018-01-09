@@ -1,0 +1,33 @@
+
+\newcommand{\captionfont}{\footnotesize}
+\newcommand{\SoilR}{\textsc{SoilR}}
+\newcommand{\RC}{$\Delta^{14}$C}
+\newcommand{\figsize}{0.108}
+\DeclareRobustCommand{\diag3}[3]{
+	\left(
+		\begin{matrix}
+		#1	& 0  		& \cdots	 & 0 \\
+		0 	& \ddots	& \ddots 	 & \vdots \\
+		\vdots 	& \ddots 	& \ddots 	 & 0 \\
+		0 	& \cdots        & 0		 & #3\\
+		\end{matrix}
+	\right) 
+}
+\DeclareRobustCommand{\triang2}[2]{
+	\left(
+		\begin{matrix}
+		#1_{1,1}#2	& 0 		& \cdots	 & 0 \\
+		\vdots	 	& \ddots	& \ddots 	 & \vdots \\
+		\vdots 		& 	 	& \ddots 	 & 0 \\
+		#1_{n,1}#2	& \cdots        & \cdots	 & #1_{n,n}#2\\
+		\end{matrix}
+	\right) 
+}
+\DeclareRobustCommand{\figref}[1]{\mbox{ Fig. \ref{#1}}}
+\DeclareRobustCommand{\defref}[1]{\mbox{ Definition \ref{#1}}}
+\DeclareRobustCommand{\enumref}[1]{\mbox{\ref{#1}}}
+\DeclareRobustCommand{\appendixref}[1]{\mbox{ Appendix \ref{#1}}}
+\DeclareRobustCommand{\tupelref}[2]{\mbox{\enumref{#1} \enumref{#2}}}
+\DeclareRobustCommand{\eqref}[1]{\mbox{ (\ref{#1})}}
+\DeclareRobustCommand{\carlos}[1]{{\color{green} Carlos #1}}
+\DeclareRobustCommand{\citeme851}{({\color{red} control theory lecture, the guy has not replied yet for a better citation)}}

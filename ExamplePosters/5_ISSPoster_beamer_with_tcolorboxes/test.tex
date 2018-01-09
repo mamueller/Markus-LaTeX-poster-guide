@@ -1,0 +1,42 @@
+\documentclass[final,hyperref={pdfpagelabels=false}, professionalmath, mathserif, 11pt]{beamer}
+%\documentclass[landscape,final,a0paper,fontscale=0.285]{baposter}
+%\mode<presentation>{\usetheme{BGC_retreat}}
+\usepackage{grffile}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+ 
+\def\mytitle{Stability of the General SOM Model }
+%\def\mysubtitle{Application to Stability}
+\def\myauthor{Markus Müller \quad Carlos Sierra }
+\def\myfooter{
+}
+
+\usepackage{setspace}
+\setstretch{1.25}
+
+\usepackage{bm}
+\usepackage{tikz}
+\input{tikzlibs}
+\input{colors}
+%%%%<
+%\usepackage{verbatim}
+%\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tikzpicture}
+%\setlength\PreviewBorder{5pt}%
+%%%%>
+
+%node[pos=0.5]{yes}
+\input{macros}
+\input{keys}
+\input{umlstyles}
+%\setbeamersize{text margin left=5pt,text margin right=5pt}
+%\newtheorem{theorem}{Theorem} 
+\newtheorem{Def}{Definition:}
+%\newtheorem{lemma}{Lemma:}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  \input{lengths}
+  \input{StabilityTheories}
+\end{document}
