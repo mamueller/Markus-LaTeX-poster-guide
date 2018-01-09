@@ -9,15 +9,15 @@ Especially with respect to the tools users might want to employ the template sho
 
 Since we already had a beamer \*.sty file we proceed in the following order.
 1. ) [beamer blocks in columns](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/1_beamer_blocks_in_Columns/poster.pdf)
-This requires a minimum of additional tools, but some usercode to control the alignment in a proper way.
-The properties of boxes can be controlled from the template, so that users ideally do not have to meddle with the color or fontsize.
+This requires a minimum of additional tools, but some user-code to control the alignment in a proper way.
+The properties of boxes can be controlled from the template, so that users ideally do not have to meddle with the color or font size.
 
 1. ) [beamer blocks with package textpos](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/2_beamer_blocks_with_textpos/poster.pdf)
-This approach makes use of the textpos package which is recommended by the beamer userguide for absolute positioning. 
-If combined with beamerblocks it allows controllin the block properties via the template (\*.sty file).
+This approach makes use of the textpos package which is recommended by the beamer user guide for absolute positioning. 
+If combined with beamerblocks it allows controlling the block properties via the template (\*.sty file).
 
 1. ) [3 tacolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_tacolorboxes_in_beamertemplate/poster.pdf)
-This is the most advanced and comfortable solution offering a grid of boxes and even relative postioning of boxes.
+This is the most advanced and comfortable solution offering a grid of boxes and even relative positioning of boxes.
 It also requires a very recent version of the package (probably requiring recent dependencies as well)
 The central command \posterbox is inspired by the baposter.cls but with the possibility
 to use it as a part of an existing layout (in contrast to baposter.cls which deals with the whole poster) 
