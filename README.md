@@ -2,7 +2,7 @@
  warning: **use pdflatex -shell-escape poster.tex** for the examples
 
 This small series of self-explanatory example posters with complete source code discusses some of the available approaches to create posters in LaTeX. 
-I focus particularly on the requirements of a **template** used as part of the corporate identity of my present institut.
+I focus particularly on the requirements of a **template** used as part of the corporate identity of my present institute.
 
 Ideally such a template should default to as many of the desired design elements as possible, while allowing 
 maximum flexibility for the users to craft the specific content.
@@ -21,7 +21,7 @@ The properties of boxes can be controlled from the template, so that users ideal
 This approach makes use of the textpos package which is recommended by the beamer user guide for absolute positioning. 
 If combined with beamerblocks it allows controlling the block properties via the template (\*.sty file).
 
-1. ) [tacolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_tacolorboxes_in_beamertemplate/poster.pdf)
+1. ) [tcolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_tacolorboxes_in_beamertemplate/poster.pdf)
 This is the most advanced and comfortable solution offering a grid of boxes and even relative positioning of boxes.
 It also requires a very recent version of the package, probably requiring recent dependencies as well (texlive2017 will work)
 The central command \posterbox is inspired by the baposter.cls but with the possibility
