@@ -1,17 +1,18 @@
 # Markus-LaTeX-poster-guide
  warning: **use pdflatex -shell-escape poster.tex** for the examples
 
-This small series of example posters discusses some of the available approaches to create a poster in LaTeX.
+This small series of self-explanatory example posters with complete source code discusses some of the available approaches to create posters in LaTeX. 
 I focus particularly on the requirements of a **template** used as part of the corporate identity of my present institut.
 
 Ideally such a template should default to as many of the desired design elements as possible, while allowing 
 maximum flexibility for the users to craft the specific content.
-Especially with respect to the tools users might want to employ the template should interfere as little as possible.
+In particular the template should interfere as little as possible with the tool the users want to employ.
 It should also provide solutions for common problems.
-Therefore we provide some help to avoid the sometimes unnerving problems concerning the 
+Therefore we offer some help to avoid the sometimes unnerving problems concerning the 
 **vertical alignment of boxes**.
 
-Since we already had a beamer \*.sty file we proceed in the following order.
+There is a prefered viewing order, inspired by increasing number of additional packages used. 
+Since we already had a beamer \*.sty file we start there.
 1. ) [beamer blocks in columns](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/1_beamer_blocks_in_Columns/poster.pdf)
 This requires a minimum of additional tools, but some user-code to control the alignment in a proper way.
 The properties of boxes can be controlled from the template, so that users ideally do not have to meddle with the color or font size.
