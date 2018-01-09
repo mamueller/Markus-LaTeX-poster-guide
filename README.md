@@ -2,7 +2,7 @@
  warning: **use pdflatex -shell-escape poster.tex** for the examples
 
 This small series of self-explanatory example posters with complete source code discusses some of the available approaches to create posters in LaTeX. 
-I focus particularly on the requirements of a **template** used as part of the corporate identity of my present institut.
+I focus particularly on the requirements of a **template** used as part of the corporate identity of my present institute.
 
 Ideally such a template should default to as many of the desired design elements as possible, while allowing 
 maximum flexibility for the users to craft the specific content.
