@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  9 JAN 2018 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  9 JAN 2018 20:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2208,7 +2208,7 @@ File: images/qrcode-RSCAPE.jpg Graphic file (type jpg)
 <use images/qrcode-RSCAPE.jpg>
 Package pdftex.def Info: images/qrcode-RSCAPE.jpg  used on input line 46.
 (pdftex.def)             Requested size: 55.96657pt x 55.96593pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 61.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 59.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -2221,13 +2221,13 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \hboxOneA=\skip74
 \hboxTwoA=\skip75
  (./content/1a.tex
-Underfull \hbox (badness 2781) in paragraph at lines 5--12
+Underfull \hbox (badness 2781) in paragraph at lines 5--13
 []\T1/qhv/m/it/24.88 Vertical align-ment is sim-pler than with
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 5--12
-\T1/qhv/m/n/24.88 Since the textblocks as Beamer boxes
+Underfull \hbox (badness 1308) in paragraph at lines 5--13
+\T1/qhv/m/n/24.88 Since the textblocks (sim-i-lar to beamer
  []
 
 ) (./content/2a.tex
@@ -2249,12 +2249,12 @@ LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 \hboxTwoB=\skip78
 \xcolB=\skip79
 
-Overfull \hbox (1660.5072pt too wide) in paragraph at lines 135--136
+Overfull \hbox (1660.5072pt too wide) in paragraph at lines 140--141
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
@@ -2509,7 +2509,7 @@ Package rerunfilecheck Info: File `poster.out' has not changed.
 Here is how much of TeX's memory you used:
  22593 strings out of 492985
  401340 string characters out of 6132572
- 483399 words of memory out of 5000000
+ 484400 words of memory out of 5000000
  25543 multiletter control sequences out of 15000+600000
  65196 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2521,7 +2521,7 @@ live/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/cm-super/sftt2488.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on poster.pdf (1 page, 1021577 bytes).
+Output written on poster.pdf (1 page, 1021275 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

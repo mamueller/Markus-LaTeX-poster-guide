@@ -48,20 +48,25 @@
         \end{columns}
         \vspace{1cm}
         We add some text here to show that the block will grow even over the bottom of the column. This demonstrates
-            \end{minipage}
-           \end{block}
-        \end{textblock}
-        \begin{textblock}{.3}[0.5,0.5](.2,.9)
-    {\textblockcolor{myblue}
-		This Block is at position (2,3), but because the optional argument
+      \end{minipage}
+    \end{block}
+   \end{textblock}
+
+   \textblockcolor{myblue}
+   \begin{textblock}{.3}(.2,.8)
+     The textblocks can also overlap.
+     To make the effect more visible we also used 
+     \begin{verbatim}
+       \textblockcolor{myblue}
+     \end{verbatim}
+	 \end{textblock}
+   
+   \textblockcolor{white}
+   \begin{textblock}{.3}[0.5,0.5](.2,.9)
+		This is at position (2,3), but because the optional argument
 		[0.5,0.5]
 		has been given, it is the centre of the block which is
 		located at that point, rather than the top-left corner.
-    We also used 
-    \begin{verbatim}
-    \textblockcolor{myblue}
-    \end{verbatim}
-    }
 	\end{textblock}
   % lets build our own environment with 
   % a minibox inside to be able to influence

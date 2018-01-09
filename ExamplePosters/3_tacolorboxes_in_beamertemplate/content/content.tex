@@ -12,12 +12,27 @@
         poster = {showframe,height=.9\textheight,spacing=2cm},
         boxes = {beamer,colframe=blue!50!black,colback=blue!50,colupper=yellow!50},
       ]
-      \posterbox[adjusted title ={And use the tcolorbox package instead}]{name=A,column=1,span=3,row=1}{\LARGE tcolorbox has an option poster}{
+      %\posterbox[adjusted title ={And use the tcolorbox package instead}]{name=A,column=1,span=3,row=1}{\LARGE tcolorbox has an option poster
+      \begin{posterboxenv}[adjusted title ={And use the tcolorbox package instead}]{name=A,column=1,span=3,row=1}{\LARGE tcolorbox has an option poster
+
+        %\begin{tcblisting}{colback=yellow!10}
+        %  usepackage[most,poster]{tacolorbox} 
+        %\end{tcblisting}
+        
+\begin{verbatim}
+  usepackage[most,poster]{tacolorbox} 
+\end{verbatim}
+        
         This makes alignment much much easier.
-        But you need a very recent version (2017)  of the package.
+        Even relative postioning of boxes with automatic alignment is supported.
+        The possibilities are endless.
+        The Resources folder of the repository contains the recent 476 page tutorial.
+        \\
+        You need a very recent version (2017)  of the package.
         If you insall the newest texLive distribution of 2017 everything works.
 
       }
+      \end{posterboxenv}
       \posterbox {name=B,column=2,span=2,below=A}{My second box without a title}
       \posterbox[adjusted title=Third box]
       {name=C,column=2,between=B and bottom}{My third box}

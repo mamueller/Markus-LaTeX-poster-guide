@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  9 JAN 2018 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  9 JAN 2018 19:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2772,10 +2772,6 @@ LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 18.2pt on input line 16.
-runsystem(pygmentize -l LaTeX -f latex -P commandprefix=PYG -F tokenmerge -o _m
-inted-poster/322D5398C9DEABF03DA02F351D6488C2BA05591F950E158A7F836D6AD14F3AE3.p
-ygtex content/lengths.tex)...executed.
-
 
 (./_minted-poster/322D5398C9DEABF03DA02F351D6488C2BA05591F950E158A7F836D6AD14F3
 AE3.pygtex))
@@ -2825,9 +2821,6 @@ xt_en.pdf> <./images/people/MarkusMueller.jpg> <./images/qrcode.png>]
 
 \tf@snm=\write13
 \openout13 = `poster.snm'.
-
-runsystem(rm _minted-poster/FE0044A14FA651BCEE09AB73AF63D79BBA05591F950E158A7F8
-36D6AD14F3AE3.pygtex)...executed.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
@@ -3085,9 +3078,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 42082 strings out of 492985
- 841549 string characters out of 6132572
- 1010184 words of memory out of 5000000
+ 42081 strings out of 492985
+ 841485 string characters out of 6132572
+ 1010189 words of memory out of 5000000
  44799 multiletter control sequences out of 15000+600000
  603674 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3099,7 +3092,7 @@ live/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/cm-super/sfit2488.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/public/cm-super/sftt2488.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on poster.pdf (1 page, 1466709 bytes).
+Output written on poster.pdf (1 page, 1466773 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream

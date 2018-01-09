@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  9 JAN 2018 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  9 JAN 2018 21:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1060,50 +1060,420 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \footerheight=\skip60
 )
 (./packages.tex
-(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2017/09/14 version 4.11 text color boxes
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box53
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen267
+\pgf@nodesepend=\dimen268
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks47
+\verbatim@line=\toks48
+\verbatim@in@stream=\read2
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box54
+\tcb@upperbox=\box55
+\tcb@lowerbox=\box56
+\tcb@phantombox=\box57
+\c@tcbbreakpart=\count171
+\c@tcblayer=\count172
+\tcolorbox@number=\count173
+\tcb@temp=\box58
+\tcb@temp=\box59
+\tcb@temp=\box60
+\tcb@temp=\box61
+\tcb@out=\write5
+\tcb@record@out=\write6
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.11'
+\c@tcbrastercolumn=\count174
+\c@tcbrasterrow=\count175
+\c@tcbraster=\count176
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.11'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen269
+\pgffor@skip=\dimen270
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count177
+\pgfplotmarksize=\dimen271
+)
+\tikz@lastx=\dimen272
+\tikz@lasty=\dimen273
+\tikz@lastxsaved=\dimen274
+\tikz@lastysaved=\dimen275
+\tikzleveldistance=\dimen276
+\tikzsiblingdistance=\dimen277
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count178
+\tikznumberofchildren=\count179
+\tikznumberofcurrentchild=\count180
+\tikz@fig@count=\count181
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count182
+\pgfmatrixcurrentcolumn=\count183
+\pgf@matrix@numberofcolumns=\count184
+)
+\tikz@expandcount=\count185
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+\tcb@waterbox=\box66
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.11'
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.11'
+\tcb@testbox=\box67
+\tcb@totalupperbox=\box68
+\tcb@totallowerbox=\box69
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.11'
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.11'
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.11'
+\tcbfitdim=\dimen278
+\tcb@lowerfitdim=\dimen279
+\tcb@upperfitdim=\dimen280
+\tcb@cur@hbadness=\count186
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.11'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2017/12/16 L3 programming layer (loader) 
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2017/12/16 L3 programming layer (code)
+\c_max_int=\count187
+\l_tmpa_int=\count188
+\l_tmpb_int=\count189
+\g_tmpa_int=\count190
+\g_tmpb_int=\count191
+\g__intarray_font_int=\count192
+\g__prg_map_int=\count193
+\c_log_iow=\count194
+\l_iow_line_count_int=\count195
+\l__iow_line_target_int=\count196
+\l__iow_one_indent_int=\count197
+\l__iow_indent_int=\count198
+\c_zero_dim=\dimen281
+\c_max_dim=\dimen282
+\l_tmpa_dim=\dimen283
+\l_tmpb_dim=\dimen284
+\g_tmpa_dim=\dimen285
+\g_tmpb_dim=\dimen286
+\c_zero_skip=\skip61
+\c_max_skip=\skip62
+\l_tmpa_skip=\skip63
+\l_tmpb_skip=\skip64
+\g_tmpa_skip=\skip65
+\g_tmpb_skip=\skip66
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count199
+\c__fp_leading_shift_int=\count266
+\c__fp_middle_shift_int=\count267
+\c__fp_trailing_shift_int=\count268
+\c__fp_big_leading_shift_int=\count269
+\c__fp_big_middle_shift_int=\count270
+\c__fp_big_trailing_shift_int=\count271
+\c__fp_Bigg_leading_shift_int=\count272
+\c__fp_Bigg_middle_shift_int=\count273
+\c__fp_Bigg_trailing_shift_int=\count274
+\c__fp_rand_size_int=\count275
+\c__fp_rand_four_int=\count276
+\c__fp_rand_eight_int=\count277
+\l__sort_length_int=\count278
+\l__sort_min_int=\count279
+\l__sort_top_int=\count280
+\l__sort_max_int=\count281
+\l__sort_true_max_int=\count282
+\l__sort_block_int=\count283
+\l__sort_begin_int=\count284
+\l__sort_end_int=\count285
+\l__sort_A_int=\count286
+\l__sort_B_int=\count287
+\l__sort_C_int=\count288
+\l__tl_build_start_index_int=\count289
+\l__tl_build_index_int=\count290
+\l__tl_analysis_normal_int=\count291
+\l__tl_analysis_index_int=\count292
+\l__tl_analysis_nesting_int=\count293
+\l__tl_analysis_type_int=\count294
+\l__regex_internal_a_int=\count295
+\l__regex_internal_b_int=\count296
+\l__regex_internal_c_int=\count297
+\l__regex_balance_int=\count298
+\l__regex_group_level_int=\count299
+\l__regex_mode_int=\count300
+\c__regex_cs_in_class_mode_int=\count301
+\c__regex_cs_mode_int=\count302
+\l__regex_catcodes_int=\count303
+\l__regex_default_catcodes_int=\count304
+\c__regex_catcode_D_int=\count305
+\c__regex_catcode_S_int=\count306
+\c__regex_catcode_L_int=\count307
+\c__regex_catcode_O_int=\count308
+\c__regex_catcode_A_int=\count309
+\c__regex_all_catcodes_int=\count310
+\l__regex_show_lines_int=\count311
+\l__regex_min_state_int=\count312
+\l__regex_max_state_int=\count313
+\l__regex_left_state_int=\count314
+\l__regex_right_state_int=\count315
+\l__regex_capturing_group_int=\count316
+\l__regex_min_pos_int=\count317
+\l__regex_max_pos_int=\count318
+\l__regex_curr_pos_int=\count319
+\l__regex_start_pos_int=\count320
+\l__regex_success_pos_int=\count321
+\l__regex_curr_char_int=\count322
+\l__regex_curr_catcode_int=\count323
+\l__regex_last_char_int=\count324
+\l__regex_case_changed_char_int=\count325
+\l__regex_curr_state_int=\count326
+\l__regex_step_int=\count327
+\l__regex_min_active_int=\count328
+\l__regex_max_active_int=\count329
+\l__regex_replacement_csnames_int=\count330
+\l__regex_match_count_int=\count331
+\l__regex_min_submatch_int=\count332
+\l__regex_submatch_int=\count333
+\l__regex_zeroth_submatch_int=\count334
+\g__debug_trace_regex_int=\count335
+\c_empty_box=\box70
+\l_tmpa_box=\box71
+\l_tmpb_box=\box72
+\g_tmpa_box=\box73
+\g_tmpb_box=\box74
+\l__box_top_dim=\dimen287
+\l__box_bottom_dim=\dimen288
+\l__box_left_dim=\dimen289
+\l__box_right_dim=\dimen290
+\l__box_top_new_dim=\dimen291
+\l__box_bottom_new_dim=\dimen292
+\l__box_left_new_dim=\dimen293
+\l__box_right_new_dim=\dimen294
+\l__box_internal_box=\box75
+\l__coffin_internal_box=\box76
+\l__coffin_internal_dim=\dimen295
+\l__coffin_offset_x_dim=\dimen296
+\l__coffin_offset_y_dim=\dimen297
+\l__coffin_x_dim=\dimen298
+\l__coffin_y_dim=\dimen299
+\l__coffin_x_prime_dim=\dimen300
+\l__coffin_y_prime_dim=\dimen301
+\c_empty_coffin=\box77
+\l__coffin_aligned_coffin=\box78
+\l__coffin_aligned_internal_coffin=\box79
+\l_tmpa_coffin=\box80
+\l_tmpb_coffin=\box81
+\l__coffin_display_coffin=\box82
+\l__coffin_display_coord_coffin=\box83
+\l__coffin_display_pole_coffin=\box84
+\l__coffin_display_offset_dim=\dimen302
+\l__coffin_display_x_dim=\dimen303
+\l__coffin_display_y_dim=\dimen304
+\l__coffin_bounding_shift_dim=\dimen305
+\l__coffin_left_corner_dim=\dimen306
+\l__coffin_right_corner_dim=\dimen307
+\l__coffin_bottom_corner_dim=\dimen308
+\l__coffin_top_corner_dim=\dimen309
+\l__coffin_scaled_total_height_dim=\dimen310
+\l__coffin_scaled_width_dim=\dimen311
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count336
+\l__driver_tmp_box=\box85
+))
+Package: xparse 2017/12/16 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count337
+\g__xparse_grabber_int=\count338
+\l__xparse_m_args_int=\count339
+\l__xparse_mandatory_args_int=\count340
+\l__xparse_v_nesting_int=\count341
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
+.................................................
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.te
+x
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.11'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
+Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count342
+\lst@gtempboxa=\box86
+\lst@token=\toks51
+\lst@length=\count343
+\lst@currlwidth=\dimen312
+\lst@column=\count344
+\lst@pos=\count345
+\lst@lostspace=\dimen313
+\lst@width=\dimen314
+\lst@newlines=\count346
+\lst@lineno=\count347
+\lst@maxwidth=\dimen315
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count348
+\lst@skipnumbers=\count349
+\lst@framebox=\box87
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.11'
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.te
+x
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.11'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.11'
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+))
+\c@tcblisting=\count350
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.11'
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '4.11'
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '4.11'
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '4.11'
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen267
-\captionmargin@=\dimen268
-\captionwidth=\dimen269
-\caption@tempdima=\dimen270
-\caption@indent=\dimen271
-\caption@parindent=\dimen272
-\caption@hangindent=\dimen273
+\captionmargin=\dimen316
+\captionmargin@=\dimen317
+\captionwidth=\dimen318
+\caption@tempdima=\dimen319
+\caption@indent=\dimen320
+\caption@parindent=\dimen321
+\caption@hangindent=\dimen322
 )
-\c@ContinuedFloat=\count171
+\c@ContinuedFloat=\count351
 Package caption Info: beamer document class.
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
+Package caption Info: listings package is loaded.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip61
-\subfigcapskip=\skip62
-\subfigcaptopadj=\dimen274
-\subfigbottomskip=\skip63
-\subfigcapmargin=\dimen275
-\subfiglabelskip=\skip64
-\c@subfigure=\count172
-\c@lofdepth=\count173
-\c@subtable=\count174
-\c@lotdepth=\count175
+\subfigtopskip=\skip67
+\subfigcapskip=\skip68
+\subfigcaptopadj=\dimen323
+\subfigbottomskip=\skip69
+\subfigcapmargin=\dimen324
+\subfiglabelskip=\skip70
+\c@subfigure=\count352
+\c@lofdepth=\count353
+\c@subtable=\count354
+\c@lotdepth=\count355
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip65
-\subfig@bottom=\skip66
+\subfig@top=\skip71
+\subfig@bottom=\skip72
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks47
-\inpenc@posthook=\toks48
+\inpenc@prehook=\toks52
+\inpenc@posthook=\toks53
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -1829,384 +2199,15 @@ File: babel.def 2017/11/03 3.15 Babel common definitions
 (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2017/11/03 3.15 Babel switching mechanism
 )
-\babel@savecnt=\count176
-\U@D=\dimen276
+\babel@savecnt=\count356
+\U@D=\dimen325
 LaTeX Info: Redefining \textlatin on input line 1741.
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2017/09/14 version 4.11 text color boxes
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
-e.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box53
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
-tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
--0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen277
-\pgf@nodesepend=\dimen278
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
--1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks49
-\verbatim@line=\toks50
-\verbatim@in@stream=\read2
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-\tcb@titlebox=\box54
-\tcb@upperbox=\box55
-\tcb@lowerbox=\box56
-\tcb@phantombox=\box57
-\c@tcbbreakpart=\count177
-\c@tcblayer=\count178
-\tcolorbox@number=\count179
-\tcb@temp=\box58
-\tcb@temp=\box59
-\tcb@temp=\box60
-\tcb@temp=\box61
-\tcb@out=\write5
-\tcb@record@out=\write6
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
-Library (tcolorbox): 'tcbraster.code.tex' version '4.11'
-\c@tcbrastercolumn=\count180
-\c@tcbrasterrow=\count181
-\c@tcbraster=\count182
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '4.11'
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen279
-\pgffor@skip=\dimen280
-\pgffor@stack=\toks51
-\pgffor@toks=\toks52
-))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
-e.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
-dlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count183
-\pgfplotmarksize=\dimen281
-)
-\tikz@lastx=\dimen282
-\tikz@lasty=\dimen283
-\tikz@lastxsaved=\dimen284
-\tikz@lastysaved=\dimen285
-\tikzleveldistance=\dimen286
-\tikzsiblingdistance=\dimen287
-\tikz@figbox=\box62
-\tikz@figbox@bg=\box63
-\tikz@tempbox=\box64
-\tikz@tempbox@bg=\box65
-\tikztreelevel=\count184
-\tikznumberofchildren=\count185
-\tikznumberofcurrentchild=\count186
-\tikz@fig@count=\count187
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
-e.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count188
-\pgfmatrixcurrentcolumn=\count189
-\pgf@matrix@numberofcolumns=\count190
-)
-\tikz@expandcount=\count191
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
-\tcb@waterbox=\box66
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.11'
-))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '4.11'
-\tcb@testbox=\box67
-\tcb@totalupperbox=\box68
-\tcb@totallowerbox=\box69
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
-Library (tcolorbox): 'tcbhooks.code.tex' version '4.11'
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '4.11'
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
-Library (tcolorbox): 'tcbfitting.code.tex' version '4.11'
-\tcbfitdim=\dimen288
-\tcb@lowerfitdim=\dimen289
-\tcb@upperfitdim=\dimen290
-\tcb@cur@hbadness=\count192
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
-Library (tcolorbox): 'tcbxparse.code.tex' version '4.11'
-(/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2017/12/16 L3 programming layer (loader) 
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2017/12/16 L3 programming layer (code)
-\c_max_int=\count193
-\l_tmpa_int=\count194
-\l_tmpb_int=\count195
-\g_tmpa_int=\count196
-\g_tmpb_int=\count197
-\g__intarray_font_int=\count198
-\g__prg_map_int=\count199
-\c_log_iow=\count266
-\l_iow_line_count_int=\count267
-\l__iow_line_target_int=\count268
-\l__iow_one_indent_int=\count269
-\l__iow_indent_int=\count270
-\c_zero_dim=\dimen291
-\c_max_dim=\dimen292
-\l_tmpa_dim=\dimen293
-\l_tmpb_dim=\dimen294
-\g_tmpa_dim=\dimen295
-\g_tmpb_dim=\dimen296
-\c_zero_skip=\skip67
-\c_max_skip=\skip68
-\l_tmpa_skip=\skip69
-\l_tmpb_skip=\skip70
-\g_tmpa_skip=\skip71
-\g_tmpb_skip=\skip72
-\c_zero_muskip=\muskip12
-\c_max_muskip=\muskip13
-\l_tmpa_muskip=\muskip14
-\l_tmpb_muskip=\muskip15
-\g_tmpa_muskip=\muskip16
-\g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count271
-\c__fp_leading_shift_int=\count272
-\c__fp_middle_shift_int=\count273
-\c__fp_trailing_shift_int=\count274
-\c__fp_big_leading_shift_int=\count275
-\c__fp_big_middle_shift_int=\count276
-\c__fp_big_trailing_shift_int=\count277
-\c__fp_Bigg_leading_shift_int=\count278
-\c__fp_Bigg_middle_shift_int=\count279
-\c__fp_Bigg_trailing_shift_int=\count280
-\c__fp_rand_size_int=\count281
-\c__fp_rand_four_int=\count282
-\c__fp_rand_eight_int=\count283
-\l__sort_length_int=\count284
-\l__sort_min_int=\count285
-\l__sort_top_int=\count286
-\l__sort_max_int=\count287
-\l__sort_true_max_int=\count288
-\l__sort_block_int=\count289
-\l__sort_begin_int=\count290
-\l__sort_end_int=\count291
-\l__sort_A_int=\count292
-\l__sort_B_int=\count293
-\l__sort_C_int=\count294
-\l__tl_build_start_index_int=\count295
-\l__tl_build_index_int=\count296
-\l__tl_analysis_normal_int=\count297
-\l__tl_analysis_index_int=\count298
-\l__tl_analysis_nesting_int=\count299
-\l__tl_analysis_type_int=\count300
-\l__regex_internal_a_int=\count301
-\l__regex_internal_b_int=\count302
-\l__regex_internal_c_int=\count303
-\l__regex_balance_int=\count304
-\l__regex_group_level_int=\count305
-\l__regex_mode_int=\count306
-\c__regex_cs_in_class_mode_int=\count307
-\c__regex_cs_mode_int=\count308
-\l__regex_catcodes_int=\count309
-\l__regex_default_catcodes_int=\count310
-\c__regex_catcode_D_int=\count311
-\c__regex_catcode_S_int=\count312
-\c__regex_catcode_L_int=\count313
-\c__regex_catcode_O_int=\count314
-\c__regex_catcode_A_int=\count315
-\c__regex_all_catcodes_int=\count316
-\l__regex_show_lines_int=\count317
-\l__regex_min_state_int=\count318
-\l__regex_max_state_int=\count319
-\l__regex_left_state_int=\count320
-\l__regex_right_state_int=\count321
-\l__regex_capturing_group_int=\count322
-\l__regex_min_pos_int=\count323
-\l__regex_max_pos_int=\count324
-\l__regex_curr_pos_int=\count325
-\l__regex_start_pos_int=\count326
-\l__regex_success_pos_int=\count327
-\l__regex_curr_char_int=\count328
-\l__regex_curr_catcode_int=\count329
-\l__regex_last_char_int=\count330
-\l__regex_case_changed_char_int=\count331
-\l__regex_curr_state_int=\count332
-\l__regex_step_int=\count333
-\l__regex_min_active_int=\count334
-\l__regex_max_active_int=\count335
-\l__regex_replacement_csnames_int=\count336
-\l__regex_match_count_int=\count337
-\l__regex_min_submatch_int=\count338
-\l__regex_submatch_int=\count339
-\l__regex_zeroth_submatch_int=\count340
-\g__debug_trace_regex_int=\count341
-\c_empty_box=\box70
-\l_tmpa_box=\box71
-\l_tmpb_box=\box72
-\g_tmpa_box=\box73
-\g_tmpb_box=\box74
-\l__box_top_dim=\dimen297
-\l__box_bottom_dim=\dimen298
-\l__box_left_dim=\dimen299
-\l__box_right_dim=\dimen300
-\l__box_top_new_dim=\dimen301
-\l__box_bottom_new_dim=\dimen302
-\l__box_left_new_dim=\dimen303
-\l__box_right_new_dim=\dimen304
-\l__box_internal_box=\box75
-\l__coffin_internal_box=\box76
-\l__coffin_internal_dim=\dimen305
-\l__coffin_offset_x_dim=\dimen306
-\l__coffin_offset_y_dim=\dimen307
-\l__coffin_x_dim=\dimen308
-\l__coffin_y_dim=\dimen309
-\l__coffin_x_prime_dim=\dimen310
-\l__coffin_y_prime_dim=\dimen311
-\c_empty_coffin=\box77
-\l__coffin_aligned_coffin=\box78
-\l__coffin_aligned_internal_coffin=\box79
-\l_tmpa_coffin=\box80
-\l_tmpb_coffin=\box81
-\l__coffin_display_coffin=\box82
-\l__coffin_display_coord_coffin=\box83
-\l__coffin_display_pole_coffin=\box84
-\l__coffin_display_offset_dim=\dimen312
-\l__coffin_display_x_dim=\dimen313
-\l__coffin_display_y_dim=\dimen314
-\l__coffin_bounding_shift_dim=\dimen315
-\l__coffin_left_corner_dim=\dimen316
-\l__coffin_right_corner_dim=\dimen317
-\l__coffin_bottom_corner_dim=\dimen318
-\l__coffin_top_corner_dim=\dimen319
-\l__coffin_scaled_total_height_dim=\dimen320
-\l__coffin_scaled_width_dim=\dimen321
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count342
-\l__driver_tmp_box=\box85
-))
-Package: xparse 2017/12/16 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count343
-\g__xparse_grabber_int=\count344
-\l__xparse_m_args_int=\count345
-\l__xparse_mandatory_args_int=\count346
-\l__xparse_v_nesting_int=\count347
-)
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
-.................................................
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.te
-x
-Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.11'
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
-Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count348
-\lst@gtempboxa=\box86
-\lst@token=\toks53
-\lst@length=\count349
-\lst@currlwidth=\dimen322
-\lst@column=\count350
-\lst@pos=\count351
-\lst@lostspace=\dimen323
-\lst@width=\dimen324
-\lst@newlines=\count352
-\lst@lineno=\count353
-\lst@maxwidth=\dimen325
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count354
-\lst@skipnumbers=\count355
-\lst@framebox=\box87
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
-))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/stringenc.sty
-Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
-)
-))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '4.11'
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.te
-x
-Library (tcolorbox): 'tcblistingscore.code.tex' version '4.11'
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '4.11'
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 67.
-))
-\c@tcblisting=\count356
-)))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
-Library (tcolorbox): 'tcbexternal.code.tex' version '4.11'
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
-Library (tcolorbox): 'tcbmagazine.code.tex' version '4.11'
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
-Library (tcolorbox): 'tcbvignette.code.tex' version '4.11'
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
-.code.tex
-File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
-)))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
-Library (tcolorbox): 'tcbposter.code.tex' version '4.11'
-)) (./footer_content.tex
+(./footer_content.tex
 \pictureHeight=\skip73
 ) (./poster.aux)
 \openout1 = `poster.aux'.
@@ -2393,11 +2394,10 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 \c@mv@tabular=\count364
 \c@mv@boldtabular=\count365
+\c@lstlisting=\count366
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: listings package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count366
  (./poster.nav)
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 12.0pt on input line 36.
@@ -2499,154 +2499,21 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (./content/content.tex
 \mycolwidth=\skip74
 \vblocksep=\skip75
+\openout5 = `poster.tcbtemp'.
+
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 24.88pt on input line 15.
+(Font)              scaled to size 24.88pt on input line 35.
+ (./poster.tcbtemp
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 43.0pt on input line 15.
+(Font)              scaled to size 43.0pt on input line 1.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
 \tcb@box@array@box=\box90
-Missing character: There is no T in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 7 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no L in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 7 in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no . in font nullfont!
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 35.83pt on input line 24.
+(Font)              scaled to size 35.83pt on input line 39.
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 4.0pt on input line 44.
@@ -2818,20 +2685,6 @@ fp-random.sty    1995/02/23
 booktabs.sty    2016/04/27 v1.618033 publication quality tables
 tabularx.sty    2016/02/03 v2.11 `tabularx' package (DPC)
 packages.tex
- caption.sty    2016/02/21 v3.3-144 Customizing captions (AR)
-caption3.sty    2016/05/22 v1.7-166 caption3 kernel (AR)
-subfigure.sty    2002/03/15 v2.1.5 subfigure package
-subfigure.cfg
-inputenc.sty    2015/03/17 v1.2c Input encoding file
-    utf8.def    2017/01/28 v1.1t UTF-8 support for inputenc
-   t1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
-  ot1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
-  omsenc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
-  t2aenc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
-  ly1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
-  ts1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
-   babel.sty    2017/11/03 3.15 The Babel package
- english.ldf    2017/06/06 v3.3r English support from the babel system
 tcolorbox.sty    2017/09/14 version 4.11 text color boxes
      pgf.sty    2015/08/07 v3.0.1a (rcs-revision 1.15)
 pgfcomp-version-0-65.sty    2007/07/03 v3.0.1a (rcs-revision 1.7)
@@ -2857,6 +2710,20 @@ listings.sty    2015/06/04 1.6 (Carsten Heinz)
 listings.cfg    2015/06/04 1.6 listings configuration
 stringenc.sty    2016/05/16 v1.11 Convert strings between diff. encodings (HO)
 shellesc.sty    2016/06/07 v0.02a unified shell escape interface for LaTeX
+ caption.sty    2016/02/21 v3.3-144 Customizing captions (AR)
+caption3.sty    2016/05/22 v1.7-166 caption3 kernel (AR)
+subfigure.sty    2002/03/15 v2.1.5 subfigure package
+subfigure.cfg
+inputenc.sty    2015/03/17 v1.2c Input encoding file
+    utf8.def    2017/01/28 v1.1t UTF-8 support for inputenc
+   t1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+  ot1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+  omsenc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+  t2aenc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+  ly1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+  ts1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+   babel.sty    2017/11/03 3.15 The Babel package
+ english.ldf    2017/06/06 v3.3r English support from the babel system
 footer_content.tex
 omlnxlmi.fd    2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
  untxexa.fd    2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
@@ -2889,6 +2756,8 @@ LF.
  untxsym.fd    2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
  untxsyc.fd    2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 content/content.tex
+  poster.tcbtemp
+  t1cmtt.fd    2014/09/29 v2.5h Standard LaTeX font definitions
 images/logos/Minerva_green_text_en.pdf
 images/people/MarkusMueller.jpg
 images/qrcode.png
@@ -2899,20 +2768,22 @@ Package rerunfilecheck Info: File `poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39383 strings out of 492985
- 783618 string characters out of 6132572
- 893380 words of memory out of 5000000
- 42198 multiletter control sequences out of 15000+600000
- 572791 words of font info for 67 fonts, out of 8000000 for 9000
+ 39405 strings out of 492985
+ 784277 string characters out of 6132572
+ 894904 words of memory out of 5000000
+ 42213 multiletter control sequences out of 15000+600000
+ 573104 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,17n,101p,10465b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on poster.pdf (1 page, 554075 bytes).
+ 66i,17n,101p,10484b,1333s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/cm-super/sftt2488.pfb>
+Output written on poster.pdf (1 page, 582092 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
