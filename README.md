@@ -27,7 +27,7 @@ but rely on cooperation of the users, to achieve the corporate design.
 
 1. ) [forking baposter.cls](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/4_baposter_fork/poster.pdf)
 The baposter.cls provides a minimal and very elegant solution to the alignment problems related to poster creation. Its central tool is the \posterbox command. I had to hack it to make it aware of a footer.
-An advantage of this approach is that all in all it is much less complex (It avoids the complexity of the beamer package and its templating facilities and does not require an extra package for the boxes, as all the other approaches it does rely on tikz and pgf though)
+An advantage of this approach is that all in all it is much less complex (It avoids the complexity of the beamer package and its templating facilities and does not require an extra package for the boxes. It does rely on tikz and pgf though (as all the other examples)
 A corporate design can be achieved by reducing the flexibility of the original baposter.cls or set other defaults.
 Really fancy stuff like overlapping boxes is not possible though.
 
