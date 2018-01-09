@@ -1,12 +1,15 @@
 # Markus-LaTeX-poster-guide
  warning: **use pdflatex -shell-escape poster.tex** for the examples
 
-This small series of example posters discusses some of the available approaches to create a poster in LaTeX,
-in the light of commonly faced difficulties, especially vertical alignment of boxes.
-I focus particularly on the requirements of a template used as part of the corporate identity of an institution.
+This small series of example posters discusses some of the available approaches to create a poster in LaTeX.
+I focus particularly on the requirements of a **template** used as part of the corporate identity of my present institut.
+
 Ideally such a template should default to as many of the desired design elements as possible, while allowing 
 maximum flexibility for the users to craft the specific content.
 Especially with respect to the tools users might want to employ the template should interfere as little as possible.
+It should also provide solutions for common problems.
+Therefore we provide some help to avoid the sometimes unnerving problems concerning the 
+**vertical alignment of boxes**.
 
 Since we already had a beamer \*.sty file we proceed in the following order.
 1. ) [beamer blocks in columns](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/1_beamer_blocks_in_Columns/poster.pdf)
