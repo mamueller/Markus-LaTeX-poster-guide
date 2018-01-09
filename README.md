@@ -1,4 +1,5 @@
 # Markus-LaTeX-poster-guide
+ warning: **use pdflatex -shell-escape poster.tex** for the examples
 
 This small series of example posters discusses some of the available approaches to create a poster in LaTeX,
 in the light of commonly faced difficulties, especially vertical alignment of boxes.
@@ -37,5 +38,5 @@ Remarks:
 - I used an existing template that I did not develop. My guess is that the connection between the template and the usercode  of the example posters can be improved. Some of the unused settings could be removed from the template, some could be added to 
 avoid duplication in the examples (e.g. some lengths to organize the central part of the poster).
 Especially the LaTeX users of our institute are encouraged to propose improvements. (please fork, patch and send pull requests)
-- 
+
 
