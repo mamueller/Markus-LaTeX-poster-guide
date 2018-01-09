@@ -16,7 +16,7 @@ The properties of boxes can be controlled from the template, so that users ideal
 This approach makes use of the textpos package which is recommended by the beamer user guide for absolute positioning. 
 If combined with beamerblocks it allows controlling the block properties via the template (\*.sty file).
 
-1. ) [3 tacolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_tacolorboxes_in_beamertemplate/poster.pdf)
+1. ) [tacolorboxes](https://github.com/mamueller/Markus-LaTeX-poster-guide/blob/master/ExamplePosters/3_tacolorboxes_in_beamertemplate/poster.pdf)
 This is the most advanced and comfortable solution offering a grid of boxes and even relative positioning of boxes.
 It also requires a very recent version of the package (probably requiring recent dependencies as well)
 The central command \posterbox is inspired by the baposter.cls but with the possibility
