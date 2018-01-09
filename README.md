@@ -31,6 +31,6 @@ An advantage of this approach is that all in all it is much less complex (It avo
 A corporate design can be achieved by reducing the flexibility of the original baposter.cls or set other defaults.
 Really fancy stuff like overlapping boxes is not possible though.
 
-
- 
+Remarks:
+I made free and (even recursive) use of the \input command to distinguish between the different structural 
 
