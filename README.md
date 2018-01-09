@@ -32,5 +32,9 @@ A corporate design can be achieved by reducing the flexibility of the original b
 Really fancy stuff like overlapping boxes is not possible though.
 
 Remarks:
-I made free and (even recursive) use of the \input command to distinguish between the different structural 
+I made free and (even recursive) use of the \input command to distinguish between the different structural layers. It should make it simple to change the content.
+
+I used an existing template that I did not develop. My guess is that the connection between the template and the usercode  of the example posters can be improved. Some of the unused settings could be removed from the template, some could be added to 
+avoid duplication in the examples (e.g. some lengths to organize the central part of the poster).
+Especially the LaTeX users of our institute are encouraged to propose improvements. (please fork, patch and send pull requests)
 
