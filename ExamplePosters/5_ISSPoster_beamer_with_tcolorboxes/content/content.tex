@@ -21,23 +21,24 @@
     height=\the\dimexpr \textheight-\footsep * 2 \relax,
     %height=\textheight,
     spacing=\footsep,
-    columns = \numberofcolumns
+    columns = \numberofcolumns,
   },
   boxes = {
     beamer,
-    colframe=blue!50!black,
-    colback=blue!50,
-    colupper=yellow!50
+    colframe=lightgray,
+    %colbacktitle=red!50!white,
+    colbacktitle=lightgray,
+    coltitle=darkgray,
+    %colframe=blue!50!black,
+    %colback=blue!50,
+    colback=lightgray,
+    colupper=black!50,
+    coltext=black
+    %fonttitle=\bfseries\Large\scshape
   },
+  fontsize =29pt
 ]
 %  %%%---------------------------------------------------------------------------
-%  %%% Each box has a name and can be placed absolutely or relatively.
-%  %%% The only inconvenience is that you can only specify a relative position 
-%  %%% towards an already declared box. So if you have a box attached to the 
-%  %%% bottom, one to the top and a third one which should be in between, you 
-%  %%% have to specify the top and bottom boxes before you specify the middle 
-%  %%% box.
-%  % since in this example we have several boxes with the same horizontal alignment and widht
 %  % we set some new variables
   \newcommand{\leftspan}{2}
   \newcommand{\leftcol}{1}
@@ -98,7 +99,7 @@
         \begin{multicols}{3}
           %\nobibliography{GeneralModel} % the citations are there but no Referenc section
           \renewcommand{\section}[2]{}% to get rid of the References Header
-        i%  \input{poster.bbl}
+        %  \input{poster.bbl}
           \bibliography{GeneralModel} % for an extra page
           \bibliographystyle{abbrvnat}
         \end{multicols}
@@ -115,22 +116,4 @@
     	\input{content/Intro}
     }
 
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  % footerbox 
-%    \headerbox{
-%      Conclusion
-%    }{
-%      name=Intro,
-%      span=\rightspan,
-%      column=\rightcol, 
-%      below=combi,
-%      %above=bibliography
-%      above=bottom
-%    }{
-%    	\input{content/Intro}
-%    }
-%%%%%%%%%%%
-    \end{tcbposter}
-%\end{poster}
-%  \bibliography{GeneralModel} % for an extra page
-%  \bibliographystyle{abbrvnat}
+\end{tcbposter}
