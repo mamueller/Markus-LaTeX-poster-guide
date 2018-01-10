@@ -1,3 +1,5 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
 \ProvidesPackage{beamerthemeBGC_retreat} 
 \mode<presentation>
 
@@ -91,6 +93,8 @@
 % ------
 % Header
 % ------
+	\newlength{\footsep}
+	\setlength{\footsep}{1cm}
 	\setbeamertemplate{headline}{  
 	  \leavevmode
 	
@@ -127,12 +131,12 @@
 	
 	    
 	    %\vskip-1.5cm %change this to raise the main block
-	    \vskip-3.0cm
+	    %\vskip-3.0cm
 	    
 	
 	
 	  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
-	    \rule{0pt}{18pt}
+	    \rule{0pt}{0pt}
 	  \end{beamercolorbox}
 	}
 
@@ -140,10 +144,13 @@
 % ------
 % Footer
 % ------
-	\newlength{\footerheight}
-	\setlength{\footerheight}{85mm}
+	%\newlength{\footerheight}
+	%\setlength{\footerheight}{85mm}
 	
 	\setbeamertemplate{footline}{
+	  \begin{beamercolorbox}[wd=\paperwidth]{higher separation line head}
+	    \rule{0pt}{\footsep}
+	  \end{beamercolorbox}
 	\normalbaselines
 	\begin{beamercolorbox}[ht=10ex,leftskip=1em,rightskip=1em]{footcol}
 		\vskip2cm

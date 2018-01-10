@@ -17,9 +17,10 @@
 
 \begin{tcbposter}[
   poster = {
-    showframe,
-    height=.9\textheight,
-    spacing=2cm,
+    %showframe,
+    height=\the\dimexpr \textheight-\footsep * 2 \relax,
+    %height=\textheight,
+    spacing=\footsep,
     columns = \numberofcolumns
   },
   boxes = {
