@@ -1,0 +1,100 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Allison et~al.(2010)Allison, Wallenstein, and Bradford]{Allison}
+S.~D. Allison, M.~D. Wallenstein, and M.~A. Bradford.
+\newblock Soil-carbon response to warming dependent on microbial physiology.
+\newblock \emph{Nature Geosci}, 3\penalty0 (5):\penalty0 336--340, 2010.
+\newblock 10.1038/ngeo846.
+
+\bibitem[Andren and Katterer(1997)]{AndrenKatterer}
+O.~Andren and T.~Katterer.
+\newblock Icbm: The introductory carbon balance model for exploration of soil
+  carbon balances.
+\newblock \emph{Ecological Applications}, 7\penalty0 (4):\penalty0 1226--1236,
+  1997.
+
+\bibitem[Coleman and Jenkinson(1999)]{Coleman}
+K.~Coleman and D.~Jenkinson.
+\newblock Rothc-26.3 a model for the turnover of carbon in soil: model
+  description and windows user guide (modified 2008).
+\newblock Technical report, IACR Rothamsted, 1999.
+
+\bibitem[Fontaine and Barot(2005)]{Fontaine}
+S.~Fontaine and S.~Barot.
+\newblock Size and functional diversity of microbe populations control plant
+  persistence and long-term soil carbon accumulation.
+\newblock \emph{Ecology Letters}, 8\penalty0 (10):\penalty0 1075--1087, 2005.
+\newblock ISSN 1461-0248.
+\newblock \doi{10.1111/j.1461-0248.2005.00813.x}.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1461-0248.2005.00813.x}.
+
+\bibitem[Henin and Dupuis(1945)]{HeninDupuis}
+S.~Henin and M.~Dupuis.
+\newblock Essai de bilan de la mati{\`e}re organique du sol.
+\newblock \emph{Annales Agronomique}, 15:\penalty0 17--29, 1945.
+
+\bibitem[Henin et~al.(1959)Henin, Monnier, and Turc]{Henin}
+S.~Henin, G.~Monnier, and L.~Turc.
+\newblock Un aspect de la dynamique des matieres organiques du soi.
+\newblock \emph{Comptes rendus hebdomadaires des s{\'e}ances de l'Acad{\'e}mie
+  des sciences}, 248\penalty0 (1):\penalty0 138--141, 1959.
+
+\bibitem[Jenkinson and Rayner(1977)]{Jenkinson}
+D.~S. Jenkinson and J.~H. Rayner.
+\newblock The turnover of soil organic matter in some of the rothamsted
+  classical experiments.
+\newblock \emph{Soil Science}, 123\penalty0 (5):\penalty0 298--305, 1977.
+
+\bibitem[Manzoni and Porporato(2007)]{Manzoni07}
+S.~Manzoni and A.~Porporato.
+\newblock A theoretical analysis of nonlinearities and feedbacks in soil carbon
+  and nitrogen cycles.
+\newblock \emph{Soil Biology and Biochemistry}, 39\penalty0 (7):\penalty0
+  1542--1556, 2007.
+
+\bibitem[Parton et~al.(1987)Parton, Schimel, Cole, and Ojima]{Parton}
+W.~J. Parton, D.~S. Schimel, C.~V. Cole, and D.~S. Ojima.
+\newblock Analysis of factors controlling soil organic matter levels in great
+  plains grasslands1.
+\newblock \emph{Soil Sci. Soc. Am. J.}, 51\penalty0 (5):\penalty0 1173--1179,
+  1987.
+\newblock URL
+  \url{https://www.soils.org/publications/sssaj/abstracts/51/5/1173}.
+
+\bibitem[Schimel and Weintraub(2003)]{Schimel}
+J.~P. Schimel and M.~N. Weintraub.
+\newblock The implications of exoenzyme activity on microbial carbon and
+  nitrogen limitation in soil: a theoretical model.
+\newblock \emph{Soil Biology and Biochemistry}, 35\penalty0 (4):\penalty0
+  549--563, 2003.
+
+\bibitem[Sinsabaugh and Follstad~Shah(2012)]{Sinsabaugh}
+R.~L. Sinsabaugh and J.~J. Follstad~Shah.
+\newblock Ecoenzymatic stoichiometry and ecological theory.
+\newblock \emph{Annual Review of Ecology, Evolution, and Systematics}, 2012.
+\newblock doi: 10.1146/annurev-ecolsys-071112-124414.
+
+\bibitem[Wang et~al.(2013)Wang, Post, and Mayes]{WangMEND}
+G.~Wang, W.~M. Post, and M.~A. Mayes.
+\newblock Development of microbial-enzyme-mediated decomposition model
+  parameters through steady-state and dynamic analyses.
+\newblock \emph{Ecological Applications}, 23\penalty0 (1):\penalty0 255--272,
+  2013/09/20 2013.
+\newblock \doi{10.1890/12-0681.1}.
+\newblock URL \url{http://dx.doi.org/10.1890/12-0681.1}.
+
+\bibitem[Zelenev et~al.(2000)Zelenev, van Bruggen, and Semenov]{Zelenev}
+V.~Zelenev, A.~van Bruggen, and A.~Semenov.
+\newblock {``BACWAVE''}, a spatial--temporal model for traveling waves of
+  bacterial populations in response to a moving carbon source in soil.
+\newblock \emph{Microbial Ecology}, 40\penalty0 (3):\penalty0 260--272, 2000.
+\newblock ISSN 0095-3628.
+\newblock \doi{10.1007/s002480000029}.
+\newblock URL \url{http://dx.doi.org/10.1007/s002480000029}.
+
+\end{thebibliography}

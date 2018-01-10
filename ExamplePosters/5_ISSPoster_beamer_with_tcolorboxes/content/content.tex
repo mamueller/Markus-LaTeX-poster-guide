@@ -41,8 +41,8 @@
   \newcommand{\leftspan}{2}
   \newcommand{\leftcol}{1}
 
-  \newcommand{\rightspan}{\numexpr (\numberofcolumns - \leftspan) \relax}
-  \newcommand{\rightcol}{\leftspan}
+  \edef\rightspan{\the\numexpr (\numberofcolumns - \leftspan) \relax}
+  \edef\rightcol{\the\numexpr \leftspan+\leftcol\relax} 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % first column  
     % top
@@ -74,56 +74,47 @@
     }{
 	  	\input{content/Example}
 	  }
-%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  % second column  
-%    % top
-%      \headerbox{
-%        Results II, ISS like behavior and proof for example system
-%      }{
-%        name=combi, 
-%        column=\rightcol, 
-%        span=\rightspan,
-%        row=0
-%      }{
-%    	  \input{content/combi }
-%      }
-%    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   % % bottom 
-%	 % \headerbox{
-%   %   Bibliography 
-%   % }{
-%   %   name=bibliography,
-%   %   span=\rightspan,
-%   %   column=\rightcol, 
-%   %   %row=2, 
-%   %   above=bottom
-%   % }{
-%   %   {
-%   %     \tiny
-%   %     \begin{multicols}{3}
-%   %       %\nobibliography{GeneralModel} % the citations are there but no Referenc section
-%   %       %\renewcommand{\section}[2]{}% to get rid of the References Header
-%   %       %\input{poster.bbl}
-%   %       \bibliographystyle{abbrvnat}
-%   %     \end{multicols}
-%   %   }
-%	 % }
-%   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    % middle
-%    \headerbox{
-%      Conclusion
-%    }{
-%      name=Intro,
-%      span=\rightspan,
-%      column=\rightcol, 
-%      below=combi,
-%      %above=bibliography
-%      above=bottom
-%    }{
-%    	\input{content/Intro}
-%    }
-%
-%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % second column  
+    % top
+      \posterbox[title= {Results II, ISS like behavior and proof for example system }]{
+        name=combi, 
+        column=\rightcol, 
+        span= \rightspan
+      }{
+    	  \input{content/combi }
+      }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % bottom 
+    \posterbox[title=Bibliography] {
+      name=bibliography,
+      span=\rightspan,
+      column=\rightcol, 
+      above=bottom
+    }{
+      {
+        \tiny
+        \begin{multicols}{3}
+          %\nobibliography{GeneralModel} % the citations are there but no Referenc section
+          \renewcommand{\section}[2]{}% to get rid of the References Header
+        i%  \input{poster.bbl}
+          \bibliography{GeneralModel} % for an extra page
+          \bibliographystyle{abbrvnat}
+        \end{multicols}
+      }
+	  }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % middle
+    \posterbox[title={ Conclusion }]{
+      name=Intro,
+      span=\rightspan,
+      column=\rightcol, 
+      between=combi and bibliography
+    }{
+    	\input{content/Intro}
+    }
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  % footerbox 
 %    \headerbox{
 %      Conclusion
