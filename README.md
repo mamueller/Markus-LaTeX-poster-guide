@@ -6,7 +6,7 @@ I focus particularly on the requirements of a **template** used as part of the c
 
 Ideally such a template should default to as many of the desired design elements as possible, while allowing 
 maximum flexibility for the users to craft the specific content.
-In particular the template should interfere as little as possible with the tool the users want to employ.
+In particular the template should interfere as little as possible with the tools the users want to employ.
 It should also provide solutions for common problems.
 Therefore we offer some help to avoid the sometimes unnerving problems concerning the 
 **vertical alignment of boxes**.
