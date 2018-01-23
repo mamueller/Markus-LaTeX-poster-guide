@@ -1,0 +1,180 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'image.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{3366.37432423bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.70646654)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{image.pdf}}%
+    \put(0.65772032,0.6373916){\makebox(0,0)[b]{\smash{\textbf{Age structure of well-mixed compartmental systems}}}}%
+    \put(0.50550027,0.615865){\makebox(0,0)[lb]{\smash{\textbf{Holger Metzler}*, Markus Müller, Carlos A. Sierra\textbf{\\ }}}}%
+    \put(0.50625828,-0.26968752){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.43813789\unitlength}\raggedright \end{minipage}}}%
+    \put(0.00696686,0.03695579){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\begin{minipage}{0.90491769\unitlength}\raggedright \\ \end{minipage}}}%
+    \put(0.65836804,0.17455845){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.01083733,0.01517955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16101181\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{image.pdf}}%
+    \put(0.83049697,0.2861002){\makebox(0,0)[b]{\smash{\textbf{Evolution of explicit age formulas}}}}%
+    \put(0.87951025,0.13598557){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright \textbf{Notation}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{image.pdf}}%
+    \put(0.56874322,0.00861792){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{*hmetzler@bgc-jena.mpg.de}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{image.pdf}}%
+    \put(0.00697195,0.05907561){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\begin{minipage}{0.66339985\unitlength}\raggedright Metzler H, Müller M, Sierra CA (in prep.) Age and transit time distributions of well-mixed compartmental systems\end{minipage}}}%
+    \put(0.00796884,0.02391313){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\begin{minipage}{0.56431577\unitlength}\raggedright Rasmussen M, Hastings A, Smith MJ, Agusto FB, Chen-Charpentier BM, Hoffman FM, Jiang J, Todd-Brown KEO, Wang Y, \\ ----Wang YP, Luo Y (2016) Transit times and mean ages for nonautonomous and autonomous compartmental systems. J Math Biol\\ \end{minipage}}}%
+    \put(0.00719474,0.0827453){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\begin{minipage}{0.56121943\unitlength}\raggedright Manzoni S, Katul GG, Porporato A (2009) Analysis of soil carbon transit times and age distributions using network theories. \\     Journal of Geophysical Research 114(G4):1–14, DOI10.1029/2009JG001070 \\ \\ \end{minipage}}}%
+    \put(0.00697195,0.04729278){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\begin{minipage}{0.51632187\unitlength}\raggedright Metzler H, Sierra CA (2016, in review) Linear autonomous compartmental models as continuous-time Markov chains: \\ ----transit time and system age distributions \end{minipage}}}%
+    \put(0.67391816,0.13597908){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright \textbf{System classification}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{image.pdf}}%
+    \put(0.15690755,0.68591237){\makebox(0,0)[b]{\smash{\textbf{Overview}}}}%
+    \put(0.06625836,0.58111993){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright \textbf{Main quantities of interest}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{image.pdf}}%
+    \put(0.42108815,0.1949084){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright State transition matrix\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{image.pdf}}%
+    \put(0.02595397,0.36449586){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright Reduction to linear nonautonomous systems\end{minipage}}}%
+    \put(0.06914351,0.46164064){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright \textbf{Mathematical description}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{image.pdf}}%
+    \put(0.48210538,0.59028243){\makebox(0,0)[b]{\smash{\textbf{Pre-industrial (<1765), system in steady state}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{image.pdf}}%
+    \put(0.88482842,0.58558676){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright Atmosphere\end{minipage}}}%
+    \put(0.7088416,-0.0507426){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.06075783\unitlength}\raggedright \end{minipage}}}%
+    \put(0.7883528,0.42661211){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27867431\unitlength}\raggedright \textbf{Transit time}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{image.pdf}}%
+    \put(0.34690519,0.42012174){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright Pre-industrial (<1765) + perturbed (1765-2500)\end{minipage}}}%
+    \put(0.48724296,0.42468182){\makebox(0,0)[b]{\smash{\textbf{Model}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{image.pdf}}%
+    \put(0.34271238,0.21816659){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04996261\unitlength}\raggedright fossil fuels\end{minipage}}}%
+    \put(0.41916923,0.21817121){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.07168549\unitlength}\raggedright deep ocean (\textit{D})\end{minipage}}}%
+    \put(0.34586086,0.29314917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{F}\textit{TA}}}}%
+    \put(0.3725265,0.29314917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{F}\textit{AT}}}}%
+    \put(0.40263287,0.24712663){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{F}\textit{AS}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{image.pdf}}%
+    \put(0.40263287,0.27035154){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{F}\textit{SA}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{image.pdf}}%
+    \put(0.37166632,0.22254298){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{\textit{u}\textit{A}}}}%
+    \put(0.4576845,0.22261425){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{u}\textit{S}}}}%
+    \put(0.43101886,0.22262652){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{F}\textit{SD}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{image.pdf}}%
+    \put(0.97131995,-0.30385484){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14760409\unitlength}\raggedright \end{minipage}}}%
+    \put(0.4009759,0.37657894){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.01216481\unitlength}\raggedright \textit{T}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{image.pdf}}%
+    \put(0.36589742,0.35349793){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0957894\unitlength}\raggedright (terrestrial biosphere)\end{minipage}}}%
+    \put(0.35976445,0.28273405){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.01216481\unitlength}\raggedright \textit{A}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{image.pdf}}%
+    \put(0.33902122,0.26525017){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0957894\unitlength}\raggedright (atmosphere)\end{minipage}}}%
+    \put(0.44564404,0.29438614){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.01216481\unitlength}\raggedright \textit{S}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{image.pdf}}%
+    \put(0.42174767,0.27442583){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0957894\unitlength}\raggedright (surface ocean)\end{minipage}}}%
+    \put(0.4977446,0.38455925){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27867431\unitlength}\raggedright External input fluxes\end{minipage}}}%
+    \put(0.49779008,0.35020785){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27867431\unitlength}\raggedright Internal fluxes\end{minipage}}}%
+    \put(0.4977446,0.25255223){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27867431\unitlength}\raggedright External output flux\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{image.pdf}}%
+    \put(0.33479325,0.57327709){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18282874\unitlength}\raggedright Transit time density\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{image.pdf}}%
+    \put(0.33745839,0.534103){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18282874\unitlength}\raggedright System age density\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{image.pdf}}%
+    \put(0.32038141,0.48632379){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18282874\unitlength}\raggedright Compartment age density\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{image.pdf}}%
+    \put(0.46411303,0.46311475){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.46010401,0.48571762){\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.46010401,0.50831825){\makebox(0,0)[lb]{\smash{20}}}%
+    \put(0.46010401,0.53092112){\makebox(0,0)[lb]{\smash{30}}}%
+    \put(0.46010401,0.553524){\makebox(0,0)[lb]{\smash{40}}}%
+    \put(0.46010401,0.57612688){\makebox(0,0)[lb]{\smash{50}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{image.pdf}}%
+    \put(0.46771417,0.45892995){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.50011989,0.45892995){\makebox(0,0)[lb]{\smash{50}}}%
+    \put(0.53252561,0.45892995){\makebox(0,0)[lb]{\smash{100}}}%
+    \put(0.56693471,0.45892995){\makebox(0,0)[lb]{\smash{150}}}%
+    \put(0.60134382,0.45892995){\makebox(0,0)[lb]{\smash{200}}}%
+    \put(0.63575518,0.45892995){\makebox(0,0)[lb]{\smash{250}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{image.pdf}}%
+    \put(0.56673415,0.56520629){\makebox(0,0)[lb]{\smash{total}}}%
+    \put(0.56673415,0.55709359){\makebox(0,0)[lb]{\smash{atmosphere}}}%
+    \put(0.56673415,0.54898089){\makebox(0,0)[lb]{\smash{terrestrial biosphere}}}%
+    \put(0.56673415,0.54086819){\makebox(0,0)[lb]{\smash{surface ocean}}}%
+    \put(0.54007557,0.45670544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08703152\unitlength}\raggedright Age (yr)\end{minipage}}}%
+    \put(0.44797731,0.58597471){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\begin{minipage}{0.01915787\unitlength}\raggedright Mass (PgC)\end{minipage}}}}%
+    \put(0.83135773,0.58979507){\makebox(0,0)[b]{\smash{\textbf{Perturbed (1765-2500)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{image.pdf}}%
+    \put(0.84293963,0.4684528){\color[rgb]{0,0,0}\rotatebox{-33.00000001}{\makebox(0,0)[lt]{\begin{minipage}{0.25399414\unitlength}\raggedright Age (yr)\end{minipage}}}}%
+    \put(0.9299619,0.52247608){\color[rgb]{0,0,0}\rotatebox{14.99999966}{\makebox(0,0)[lt]{\begin{minipage}{0.28540323\unitlength}\raggedright Time (yr)\end{minipage}}}}%
+    \put(0.68115608,0.60207386){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\begin{minipage}{0.01915787\unitlength}\raggedright Flux (PgC/yr)\end{minipage}}}}%
+    \put(0.70262392,0.58558676){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright Anthropogenic perturbations\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{image.pdf}}%
+    \put(0.69887684,0.53284007){\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.69887684,0.54938852){\makebox(0,0)[lb]{\smash{20}}}%
+    \put(0.69887684,0.56593697){\makebox(0,0)[lb]{\smash{30}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{image.pdf}}%
+    \put(0.69998677,0.51445224){\makebox(0,0)[lb]{\smash{1765}}}%
+    \put(0.73678038,0.51445224){\makebox(0,0)[lb]{\smash{2000}}}%
+    \put(0.77592379,0.51445224){\makebox(0,0)[lb]{\smash{2250}}}%
+    \put(0.8150672,0.51445224){\makebox(0,0)[lb]{\smash{2500}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{image.pdf}}%
+    \put(0.77810138,0.5628522){\makebox(0,0)[lb]{\smash{fossil fuel input}}}%
+    \put(0.77810138,0.55932491){\makebox(0,0)[lb]{\smash{land use change}}}%
+    \put(0.74720823,0.44356722){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08703152\unitlength}\raggedright Time (yr)\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{image.pdf}}%
+    \put(0.69812524,0.46437206){\makebox(0,0)[lb]{\smash{100}}}%
+    \put(0.69812524,0.48092052){\makebox(0,0)[lb]{\smash{150}}}%
+    \put(0.69812524,0.49746996){\makebox(0,0)[lb]{\smash{200}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{image.pdf}}%
+    \put(0.70202017,0.44598523){\makebox(0,0)[lb]{\smash{1765}}}%
+    \put(0.73792459,0.44598523){\makebox(0,0)[lb]{\smash{2000}}}%
+    \put(0.77612088,0.44598523){\makebox(0,0)[lb]{\smash{2250}}}%
+    \put(0.8143156,0.44598523){\makebox(0,0)[lb]{\smash{2500}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{image.pdf}}%
+    \put(0.72479329,0.45435647){\makebox(0,0)[lb]{\smash{mean system age}}}%
+    \put(0.72479329,0.45079255){\makebox(0,0)[lb]{\smash{mean backward transit time}}}%
+    \put(0.68115608,0.539887){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\begin{minipage}{0.01915787\unitlength}\raggedright Age (yr)\end{minipage}}}}%
+    \put(0.70787607,0.51286758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29028571\unitlength}\raggedright Mean age and transit time\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{image.pdf}}%
+    \put(0.97194946,0.2630653){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lt]{\begin{minipage}{0.02463156\unitlength}\raggedright increasing information\end{minipage}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{image.pdf}}%
+    \put(0.00738504,0.09453278){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\begin{minipage}{0.65024018\unitlength}\raggedright Anderson DH (1983) Compartmental modeling and tracer kinetics, vol 50. Springer Science & Business Media  \end{minipage}}}%
+    \put(0.98093682,0.78912562){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\begin{minipage}{0.01935238\unitlength}\raggedright Mass (PgC)\end{minipage}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{image.pdf}}%
+  \end{picture}%
+\endgroup%
