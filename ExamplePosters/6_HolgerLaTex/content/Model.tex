@@ -1,0 +1,26 @@
+
+\centering{Pre-industrial (<1765) + \alert{perturbed (1765-2500)}}
+
+\begin{columns}
+	\newlength{\lc}
+	\setlength{\lc}{0.5\textwidth}
+	\begin{column}{\lc}
+	\includegraphics[width=0.9\lc]{images/content/model.pdf}
+	\end{column}
+	\newlength{\rc}
+	\setlength{\rc}{\the\dimexpr (\textwidth-\lc) \relax }
+	\begin{column}{\rc}
+		External input fluxes
+		\begin{align*}
+			&u_S = 45, \quad {\color{red}u_A(t)=\text{fossil-fuels}(t)}\\
+			&\vspace{3.5cm}\\
+			&F_{AT} = 60\,(x_A/700){\color{blue}^{0.2}}\\
+			&F_{TA}(t) = 60\,x_T/3000\\
+			&\qquad\qquad + {\color{red}\text{land-use-change}(t)}\\
+			&F_{AS} = 100\,x_A/700\\
+			&F_{SA} = 100\,(x_S/1000){\color{blue}^{10}}\\
+			&\vspace{3.5cm}\\
+			&F_{SD} = 45\,x_S/1000
+		\end{align*}
+	\end{column}
+\end{columns}

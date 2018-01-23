@@ -1,0 +1,158 @@
+
+% vim:set ff=unix expandtab ts=2 sw=2:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Here starts the poster
+%%%---------------------------------------------------------------------------
+%%% Format it to your taste with the options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define some colors
+
+\definecolor{lightblue}{rgb}{.187,.613,.594}
+%\definecolor{lightblue}{rgb}{0.145,0.6666,1}
+
+
+\hyphenation{resolution occlusions}
+%%
+\newcommand{\numberofcolumns}{5}
+
+\begin{tcbposter}[
+  poster = {
+    %showframe,
+    height=\the\dimexpr \textheight-\footsep * 2 \relax,
+    %height=\textheight,
+    spacing=\footsep,
+    columns = \numberofcolumns,
+  },
+  boxes = {
+    beamer,
+    colframe=lightgray,
+    %colbacktitle=red!50!white,
+    colbacktitle=lightgray,
+    coltitle=darkgray,
+    %colframe=blue!50!black,
+    %colback=blue!50,
+    colback=lightgray,
+    colupper=black!50,
+    coltext=black
+    %fonttitle=\bfseries\Large\scshape
+  },
+  fontsize =29pt
+]
+%  %%%---------------------------------------------------------------------------
+%  % we set some new variables
+  \newcommand{\leftspan}{2}
+  \newcommand{\leftcol}{1}
+
+  \edef\rightspan{\the\numexpr (\numberofcolumns - \leftspan) \relax}
+  \edef\rightcol{\the\numexpr \leftspan+\leftcol\relax} 
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % first column  
+    % top
+  \posterbox[ title =Overview]{
+      name=Overview,
+      span=\leftspan,
+      column=\leftcol, 
+    }{
+	  	\input{content/Overview}
+    %\the\rightspan
+	  }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % bottom 
+    \posterbox[title = {Model}]{
+      name=Model,
+      span=\leftspan,
+      column=\leftcol, 
+      above=bottom
+    }{
+	  	\input{content/Model}
+	  }
+	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % higher middle 
+    \posterbox[title={Mathematical description}]{
+      name=math,
+      span=\leftspan,
+      column=\leftcol,
+      below =Overview 
+    }{
+	  	\input{content/math}
+	  }
+	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % lower middle
+    \posterbox[title={Pre-industrial (<1765), system in steady state}]{
+      name=preindustrial,
+      span=\leftspan,
+      column=\leftcol,
+      between=math and Model
+    }{
+	  	\input{content/preindustrial}
+	  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % %second column  
+    % top
+      \posterbox[title= {State transition matrix}]{
+        name=stateTransionMatrix, 
+        column=\rightcol, 
+        span= \rightspan
+      }{
+    	  \input{content/stateTransionMatrix }
+      }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % bottom 
+    \posterbox[title=Bibliography] {
+      name=bibliography,
+      span=\rightspan,
+      column=\rightcol, 
+      above=bottom
+    }{
+      {
+Anderson DH (1983) Compartmental modeling and tracer kinetics, vol 50. Springer Science \& Business Media \\
+Manzoni S, Katul GG, Porporato A (2009) Analysis of soil carbon transit times and age distributions using network theories. 
+    Journal of Geophysical Research 114(G4):1–14, DOI10.1029/2009JG001070 \\
+Metzler H, Müller M, Sierra CA Age and transit time distributions of well-mixed compartmental systems, PNAS \\
+Metzler H, Sierra CA (2016, in review) Linear autonomous compartmental models as continuous-time Markov chains: transit time and system age distributions \\
+Rasmussen M, Hastings A, Smith MJ, Agusto FB, Chen-Charpentier BM, Hoffman FM, Jiang J, Todd-Brown KEO, Wang Y, 
+Wang YP, Luo Y (2016) Transit times and mean ages for nonautonomous and autonomous compartmental systems. J Math Biol
+
+      }
+	  }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % middle top
+    \posterbox[title={ Perturbed (1765-2500)}]{
+      name=Perturbed,
+      span=\rightspan,
+      column=\rightcol, 
+      below=stateTransionMatrix 
+    }{
+    	\input{content/Perturbed}
+    }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % middle 
+    \posterbox[title={Transit time}]{
+      name=TransitTime,
+      span=\rightspan,
+      column=\rightcol, 
+      below=Perturbed 
+    }{
+    	\input{content/TransitTime}
+    }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % middle 
+    \posterbox[title={Evolution}]{
+      name=Evolution,
+      span=\rightspan,
+      column=\rightcol, 
+      below=TransitTime 
+    }{
+    	\input{content/Evolution}
+    }
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % middle bottom
+    \posterbox[title={Classification}]{
+      name=Classification,
+      span=\rightspan,
+      column=\rightcol, 
+      between=Evolution and bibliography
+    }{
+    	\input{content/Classification}
+    }
+\end{tcbposter}

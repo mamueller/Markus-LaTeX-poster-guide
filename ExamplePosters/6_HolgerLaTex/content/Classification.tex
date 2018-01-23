@@ -1,0 +1,33 @@
+\begin{columns}
+	\setlength{\lc}{0.5\textwidth}
+	\begin{column}{\lc}
+		\begin{tabular}{rl}
+		 $\tens{A}(\vec{x}(t), t)$ & nonlinear, \\
+		 $\tens{A}(\vec{x}(t)), \vec{u}(t)$ & nonautonomous\\
+		 \hline
+		 $\tens{A}(\vec{x}(t)), \vec{u}$ & nonlinear,\\
+		& autonomous \\
+		 \hline
+		 $\tens{A}(t), \vec{u}$ & linear, \\
+		 $\tens{A}, \vec{u}(t)$ & nonautonomous\\
+		 $\tens{A}(t), \vec{u}(t)$\\
+		 \hline
+		 $\tens{A}, \vec{u}$ & linear,\\
+		&  autonomous
+		\end{tabular}
+	\end{column}
+	\setlength{\rc}{\the\dimexpr (\textwidth-\lc) \relax }
+	\begin{column}{\rc}
+		\begin{tabular}{rl}
+		  $\vec{x}(t)$ & vector of compartment \\
+		& content (e.g. C) at time $t$\\
+		  $\tens{A}$ & compartmental matrix,\\
+		 & describes fluxes between\\
+		 & compartments\\
+		  $\vec{z}(t)$ & external outflux vector\\
+		 &  at time $t$\\
+		  $\vec{u}(t)$ & external input vector\\
+		 & at time $t$\\
+		\end{tabular}
+	\end{column}
+\end{columns}

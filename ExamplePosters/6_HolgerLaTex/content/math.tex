@@ -1,0 +1,37 @@
+Well-mixed compartmental systems can be descibed by a system of generally \textbf{nonlinear} 
+ordinary differential equations of the form
+\vspace{-0.25cm}
+\begin{equation}
+	\deriv{t}\,\vec{x}(t) = \tens{A}(\vec{x}(t),t)\,\vec{x}(t)+\vec{u}(t),\quad t>t_0,
+\end{equation}
+%\vspace{-0.25cm}
+with a given initial value $\vec{x_0}$.
+\\
+\vspace{1cm}
+\\
+{\Large Reduction to linear nonautonomous systems}
+\\
+\vspace{.5cm}
+\\
+\\
+We assume to know (at least numerically) the unique solution of (1) and denote it by $\vec{x}$.
+We then plug it into $\tens{A}(\vec{x},t))$ and obtain the {\bf linear} system of ordinarzy differential equations.
+\[
+\frac{d}{dt} \vec{x}(t) = \tens{A}(t)\vec{x}(t)+\vec{u}(t),\quad t>t_0
+\]
+This equation has the general solution formula
+\[
+	\vec{x}(t)=\underbrace{\tens{\Phi}(t,t_0)\vec{x}_0}_{\text{age}(t)=t-t_0+\text{initial age}}
+	+ \int_{t_0}^t \underbrace{\tens{\Phi}(t,\tau)\vec{u}(\tau)}_{\text{age}(t)=t-\tau} d\tau,
+\]
+where $\tens{\Phi}$ is the so-called state transition matrix. This leads immediately to the 
+\alert{vector of age densities} 
+\[
+\vec{\rho}(a,t)=
+\begin{cases}
+	\tens{\Phi}(t,t_0) \vec{\rho}_0(a-(t-t_0)),& a \ge t-t_0,
+	\\
+	\tens{\Phi}(t,t-a) \vec{u}(t-a),	& a < t-t_0,
+\end{cases}
+\]
+where $\vec{\rho}_0$ is the initial age distribution.
