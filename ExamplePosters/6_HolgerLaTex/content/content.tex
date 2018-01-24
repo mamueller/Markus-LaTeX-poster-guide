@@ -33,8 +33,9 @@
     %colback=blue!50,
     colback=lightgray,
     colupper=black!50,
-    coltext=black
-    %fonttitle=\bfseries\Large\scshape
+    coltext=black,
+    %fonttitle=\bfseries\large\scshape
+    fonttitle=\bfseries\Large\scshape
   },
   fontsize =29pt
 ]
@@ -54,6 +55,7 @@
       column=\leftcol, 
     }{
 	  	\input{content/Overview}
+		  \vspace{.5cm}	
     %\the\rightspan
 	  }
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,6 +67,7 @@
       above=bottom
     }{
 	  	\input{content/Model}
+		  \vspace{.5cm}	
 	  }
 	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % higher middle 
@@ -75,10 +78,11 @@
       below =Overview 
     }{
 	  	\input{content/math}
+		  \vspace{.5cm}	
 	  }
 	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % lower middle
-    \posterbox[title={Pre-industrial (<1765), system in steady state}]{
+    \posterbox[title={Pre-industrial (<1765), \\ system in steady state}]{
       name=preindustrial,
       span=\leftspan,
       column=\leftcol,
@@ -108,8 +112,9 @@
 Anderson DH (1983) Compartmental modeling and tracer kinetics, vol 50. Springer Science \& Business Media \\
 Manzoni S, Katul GG, Porporato A (2009) Analysis of soil carbon transit times and age distributions using network theories. 
     Journal of Geophysical Research 114(G4):1–14, DOI10.1029/2009JG001070 \\
-Metzler H, Müller M, Sierra CA Age and transit time distributions of well-mixed compartmental systems, PNAS \\
-Metzler H, Sierra CA (2016, in review) Linear autonomous compartmental models as continuous-time Markov chains: transit time and system age distributions \\
+Metzler H, Müller M, Sierra CA (2018) Age and transit time distributions of well-mixed compartmental systems, 
+PNAS http://www.pnas.org/content/early/2018/01/19/1705296115.abstract\\
+Metzler H, Sierra CA (2017) Mathematical Geosciences Linear autonomous compartmental models as continuous-time Markov chains: transit time and system age distributions \\
 Rasmussen M, Hastings A, Smith MJ, Agusto FB, Chen-Charpentier BM, Hoffman FM, Jiang J, Todd-Brown KEO, Wang Y, 
 Wang YP, Luo Y (2016) Transit times and mean ages for nonautonomous and autonomous compartmental systems. J Math Biol
 

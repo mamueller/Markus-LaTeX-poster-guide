@@ -19,7 +19,7 @@
    sodipodi:docname="means.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath30"><path
@@ -39,9 +39,9 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="0.29203329"
-     inkscape:cx="525.625"
+     inkscape:cx="-34.242678"
      inkscape:cy="371.875"
-     inkscape:window-x="0"
+     inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10" /><g
@@ -298,7 +298,7 @@
        id="g224" /><g
        id="g226" /><g
        id="g228" /><flowRoot
-       transform="matrix(0,0.73667692,0.8,0,-827.4437,-1903.5031)"
+       transform="matrix(0,2.0245764,2.1986044,0,-2220.8215,-5761.5359)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:Georgia;-inkscape-font-specification:Georgia;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot123800-9-7"
        xml:space="preserve"><flowRegion
