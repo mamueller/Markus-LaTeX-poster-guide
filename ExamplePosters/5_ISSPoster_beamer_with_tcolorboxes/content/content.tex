@@ -14,6 +14,9 @@
 \hyphenation{resolution occlusions}
 %%
 \newcommand{\numberofcolumns}{5}
+%  % we set some new variables
+  \newcommand{\leftspan}{2}
+  \newcommand{\leftcol}{1}
 
 \begin{tcbposter}[
   poster = {
@@ -36,12 +39,9 @@
     coltext=black
     %fonttitle=\bfseries\Large\scshape
   },
-  fontsize =29pt
+  fontsize =29.5pt
 ]
 %  %%%---------------------------------------------------------------------------
-%  % we set some new variables
-  \newcommand{\leftspan}{2}
-  \newcommand{\leftcol}{1}
 
   \edef\rightspan{\the\numexpr (\numberofcolumns - \leftspan) \relax}
   \edef\rightcol{\the\numexpr \leftspan+\leftcol\relax} 
@@ -96,6 +96,7 @@
     }{
       {
         \tiny
+       % \small
         \begin{multicols}{3}
           %\nobibliography{GeneralModel} % the citations are there but no Referenc section
           \renewcommand{\section}[2]{}% to get rid of the References Header
